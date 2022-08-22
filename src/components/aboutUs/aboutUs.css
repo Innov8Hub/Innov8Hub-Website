@@ -1,0 +1,125 @@
+.au{
+    display: grid;
+    grid-template-columns: 10vw 80vw;
+    background-color: #FEFAC6;
+    padding: 10em 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+.au-bgC{
+    height: 800px;
+    width: 800px;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    border-radius: 50%;
+}
+.au-bgC1{
+    top:10%;
+    left:-500px;
+}
+.au-bgC2{
+    top:0;
+    right:-600px;
+}
+.au-wrapper{
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: row;
+}
+.au-vid-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex: 2;
+}
+.vid-proto{
+    width: 80%;
+    height: 425px;
+    background: rgba(0,0,0,0.1);
+    z-index: 2;
+    font-size: 7rem;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.au-text-wrapper{
+    flex: 1;
+}
+.au-text-header-large{
+    font-size: 3.5rem;
+}
+.au-text-header-small{
+    font-weight: normal;
+}
+.au-p{
+    text-align: justify;
+    margin: 2em 0;
+    font-size: 1.2rem;
+}
+.hover-wrapper{
+    
+    border-radius: .5em;
+}
+.au-text-cta{
+    width: fit-content;
+    padding: 01vw 1.5vw;
+    border-radius: .5em;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    position: relative;
+    color: black;
+    line-height: 1em;
+    cursor: pointer;
+    transition: color 1s;
+}
+.au-cta-arrow{
+    height: 100%;
+    margin-left: 1em;
+    margin-top: .1em;
+    color: black;
+    font-size: 1.5rem;
+    transition: color 1s;
+}
+.au-text-cta:hover{
+    color: white;
+}
+.au-text-cta:hover .au-cta-arrow{
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .au-vid-wrapper{
+        justify-content: center;
+        margin-bottom:3rem;
+    }
+    .au-wrapper{
+        flex-direction: column;
+    }
+    .au-text-header-large{
+        text-align: center;
+    }
+    .au-text-header-small{
+        text-align: center;
+    }
+    .au-bgC{
+        height: 400px;
+        width: 400px;
+        background: rgba(0,0,0,0.1);
+        position: absolute;
+        border-radius: 50%;
+    }
+    .au-bgC1{
+        top:10%;
+        left:-400px;
+    }
+    .au-bgC2{
+        top:0;
+        right:-300px;
+    }
+}

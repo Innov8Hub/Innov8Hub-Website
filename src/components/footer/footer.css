@@ -1,0 +1,50 @@
+.f{
+    height: fit-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #D9F0CF;
+    display: grid;
+    grid-template-columns: 10vw 80vw;
+}
+.f-main{
+    display: flex;
+    height: 80%;
+    grid-column-start: 2;
+}
+.f-main-section{
+    height: 100%;
+    padding: 3vw 0;
+}
+#f-sec-1{
+    flex:1
+}
+#f-sec-2{
+    padding-left: 4vw;
+    flex:2;
+    display: flex;
+    flex-direction: column;
+}
+.f-main-section-mid1{
+    flex:2
+}
+.f-main-section-mid2{
+    flex:3;
+}
+#f-sec-3{
+    flex:3;
+    padding-left: 4vw;
+}
+.f-section-header{
+    margin-bottom: 2.5vw;
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+.f-section-p{
+    font-size: 0.75vw;
+}
+.f-copy{
+    width: 100%;
+    height: 50px;
+    background-color: #A8DB93;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
