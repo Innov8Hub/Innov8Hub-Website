@@ -18,6 +18,8 @@
 }
 .pts-companies{
     margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
 }
 .pts-companies-row{
     display: flex;
@@ -37,4 +39,20 @@
     position: absolute;
     bottom:0;
     width: 100%;
+}
+@media screen and (max-width: 480px) {
+    .pts-companies{
+        flex-direction: row;
+    }
+    .pts-header{
+        
+        font-size:3rem;
+    }
+    .pts-comp-img{
+        width: 7rem;
+    }
+    .pts-companies-row{
+        margin: 0 2rem;
+        flex-direction: column;
+    }
 }

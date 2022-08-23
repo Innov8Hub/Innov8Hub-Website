@@ -51,7 +51,7 @@
 	background: linear-gradient(90deg, #93caf1 0%, #93caf1 60%, #1071B6);
 }
 .button-swipeGrad.pvblue,.button-swipeGrad.pvgreen{
-	padding: .2em .5em;
+	padding: 1rem;
 }
 .button-swipeGrad.pvgreen:before {
 	background: linear-gradient(90deg, #DDE4AF 0%, #DDE4AF 60%, #326E35);

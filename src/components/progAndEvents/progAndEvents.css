@@ -135,12 +135,14 @@ a{
     height: 4vw;
     left: 0;
     top: 0;
+    z-index: 5;
 }
 
 .vectorBottom{
     position: absolute;
 width: 100%;
 bottom: 0;
+z-index: 5;
 }
 
 .standingLady{
@@ -174,15 +176,18 @@ bottom: 0;
     transform: translateY(-50%);
 }
 .pande-control{
-    height: 10vw;
+    height: 850px;
     width: 10vw;
-    color: rgba(254, 250, 198, 1);
+    color: #EA7F1E;
+    background-color: rgba(0, 0, 0, 0.25);
     font-size: 2em;
-    border: 1px solid rgba(254, 250, 198, 1);
-    border-radius: 50%;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.pande-controls-left{
+    transform: rotateZ(180deg);
 }
 @media screen and (max-width: 480px) {
     .pande{

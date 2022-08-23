@@ -12,6 +12,7 @@ import {motion,  useInView} from 'framer-motion'
 import { useParallax } from 'react-scroll-parallax'
 import Button from '../button/Button'
 import { AiOutlineArrowRight,AiOutlineLeft,AiOutlineRight } from "react-icons/ai";
+import { SiPlex } from "react-icons/si";
 
 function ProgAndEvents() {
   const parallax = useParallax({
@@ -96,8 +97,8 @@ function ProgAndEvents() {
   return (
     <div id="programs" className='pande' ref={ref}>
       <div className="pande-controls-wrapper">
-        <div onClick={moveLeft} className="pande-control pande-controls-left"><AiOutlineLeft/></div>
-        <div onClick={moveRight} className="pande-control pande-controls-right"><AiOutlineRight/></div>
+        <div onClick={moveLeft} className="pande-control pande-controls-left"><SiPlex/></div>
+        <div onClick={moveRight} className="pande-control pande-controls-right"><SiPlex/></div>
       </div>
       <img src={vector} alt="" className="vector" />
       <img src={vectorBottom} alt="" className="vectorBottom" />
