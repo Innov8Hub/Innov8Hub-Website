@@ -76,9 +76,10 @@
     position: relative;
 }
 .h-node-1-text{
-    transform: translateY(120%) skewY(10deg);
-    animation: rotText 1s cubic-bezier(0.01, 0.85, 0.79, 0.96) .5s forwards;
-    transition: transform 2s;
+    /* transform: translateY(120%) skewY(10deg);
+    animation: rotText 1s cubic-bezier(0.01, 0.85, 0.79, 0.96) .5s forwards; */
+    transform: translateY(0px) skewY(0);
+    transition: opacity .2s, transform 1s;
     
 }
 .robot-text{
@@ -89,6 +90,7 @@
 }
 .moved-text{
   transform: translateY(150%) skewY(10deg);
+  opacity: 0;
   animation: none;
 }
 .node2-text2{
@@ -96,7 +98,7 @@
   width:100%;
   color: black;
   top:0;
-  transition: opacity .5s, transform .6s;
+  transition: opacity .2s, transform 1s;
   
 }
 .hidden-text2{

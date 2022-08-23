@@ -54,18 +54,18 @@ function ProgAndEvents() {
     else{
       moved = 900;slide.current.style.transform = "translateX("+moved+"px)"}
   }
-  useEffect(() => {
+  // useEffect(() => {
     
-    slide.current.addEventListener('mousedown', start);
-    slide.current.addEventListener('touchstart', start);
+  //   slide.current.addEventListener('mousedown', start);
+  //   slide.current.addEventListener('touchstart', start);
   
-    slide.current.addEventListener('mousemove', move);
-    slide.current.addEventListener('touchmove', move);
+  //   slide.current.addEventListener('mousemove', move);
+  //   slide.current.addEventListener('touchmove', move);
   
-    slide.current.addEventListener('mouseleave', end);
-    slide.current.addEventListener('mouseup', end);
-    slide.current.addEventListener('touchend', end);
-  });
+  //   slide.current.addEventListener('mouseleave', end);
+  //   slide.current.addEventListener('mouseup', end);
+  //   slide.current.addEventListener('touchend', end);
+  // });
   
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

@@ -3,6 +3,9 @@ import './aboutUs.css'
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { useParallax } from 'react-scroll-parallax'
 import Button from '../button/Button'
+import leaf from "../../images/aboutUs/leaves.svg"
+import vectorBottom from  "../../images/vector-bottom.svg"
+import vector from "../../images/VectorWite.png"
 
 function AboutUs() {
   const parallax = useParallax({
@@ -16,6 +19,9 @@ function AboutUs() {
   });
   return (
     <div className="au">
+    <img src={vector} alt="" className="vector" />
+    <img src={vectorBottom} alt="" className="vectorBottom" />
+      <img src={leaf} alt="" className="leaf leaf1" /><img src={leaf} alt="" className="leaf leaf2" />
       <div ref={parallax.ref} className="au-bgC1 au-bgC"></div>
       <div ref={parallax2.ref} className="au-bgC2 au-bgC"></div>
       <div className="au-wrapper">
