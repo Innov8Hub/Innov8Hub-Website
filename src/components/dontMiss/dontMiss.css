@@ -60,10 +60,19 @@
 
 
 @media screen and (max-width: 600px) { 
+    .dm-wrapper{
+        padding-bottom: 6em;
+        padding-top: 0;
+    }
     .dm-content{
         flex-direction: column;
     }
     .dm-form-wrapper {
+        margin: 0;
+        bottom: -5.18em;
+    }
+    .dm-text-wrapper{
+        text-align: center;
         margin: 0;
     }
 }

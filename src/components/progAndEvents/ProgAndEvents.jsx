@@ -1,4 +1,4 @@
-import {React, useEffect, useRef} from 'react'
+import {React, useEffect, useRef, useState} from 'react'
 import "./progAndEvents.css"
 import vector from "../../images/VectorWite.png"
 import vectorBottom from  "../../images/vector-bottom.svg"
@@ -15,6 +15,12 @@ import { AiOutlineArrowRight,AiOutlineLeft,AiOutlineRight } from "react-icons/ai
 import { SiPlex } from "react-icons/si";
 
 function ProgAndEvents() {
+  
+  const card = useRef(null);
+  const [width, setWidth] = useState(0);
+  useEffect(()=>{
+    setWidth(card.current.offsetWidth)
+    console.log(card.current.offsetWidth)})
   // const parallax = useParallax({
   //   speed: -10,
   // });
@@ -43,17 +49,19 @@ function ProgAndEvents() {
     slide.current.scrollLeft = scrollLeft - dist;
   }
   let moved = 0;
+  
   const moveLeft = ()=>{
-    if(moved < 900){
-    moved+=300;slide.current.style.transform = "translateX("+moved+"px)"}
+    console.log("moveLeft")
+    if(moved > -(width*3) ){
+    moved-=width;slide.current.style.transform = "translateX("+moved+"px)"}
     else{
       moved = 0;slide.current.style.transform = "translateX("+moved+"px)"}
   }
   const moveRight = ()=>{
-    if(moved > 0){
-    moved-=300;slide.current.style.transform = "translateX("+moved+"px)"}
+    if(moved < 0 ){
+    moved+=width;slide.current.style.transform = "translateX("+moved+"px)"}
     else{
-      moved = 900;slide.current.style.transform = "translateX("+moved+"px)"}
+      moved = -(width*3);slide.current.style.transform = "translateX("+moved+"px)"}
   }
   // useEffect(() => {
     
@@ -67,8 +75,8 @@ function ProgAndEvents() {
   //   slide.current.addEventListener('mouseup', end);
   //   slide.current.addEventListener('touchend', end);
   // });
-  
   const ref = useRef(null);
+  
   const isInView = useInView(ref, { once: true });
   const item = {
     open: {
@@ -111,7 +119,7 @@ function ProgAndEvents() {
         animate={isInView ? "open" : "closed"}
         variants={list}
         className="pande-slider" ref={slide} >
-            <motion.div className="pande-slider-card back1" variants={item}>
+            <motion.div ref={card} className="pande-slider-card back1" variants={item}>
             <img src={sittingGuy} alt="" className="sittingGuy" />
             <div className="cont">
               <div className="pande-img-wrapper">
