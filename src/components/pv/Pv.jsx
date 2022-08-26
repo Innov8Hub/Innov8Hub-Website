@@ -26,7 +26,7 @@ function Pv() {
                         <div className="pv-reveal-1" style={{ transform: isInView ? "scale(0)" : "scale(1)"}}></div>
                         <img src={ecube} alt="" className="pv-img pv-img-ecube" />
                         <h1 className="pv-card-header">E CUBE Smart Village</h1>
-                        <a className="pv-ecube-cta pv-card-cta"><Button variant="swipeGrad pvblue">Read More</Button></a>
+                        <a href="https://innov8hub.ng/e-cube/"className="pv-ecube-cta pv-card-cta"><Button variant="swipeGrad pvblue">Read More</Button></a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ function Pv() {
                         <img src={innov8} alt="" className="pv-img pv-img-innov8" />
                         <h1 className="pv-card-header">Prototypes Developed</h1>
                         <p className="pv-card-desc">Detailed information of all developed prototypes in the Hub</p>
-                        <a className="pv-card-cta pv-innov8-cta"><Button variant="swipeGrad pvgreen">Read More</Button></a>
+                        <a href='https://innov8hub.ng/prototypes-developed/' className="pv-card-cta pv-innov8-cta"><Button variant="swipeGrad pvgreen">Read More</Button></a>
                     </div>
                 </div>
             </div>

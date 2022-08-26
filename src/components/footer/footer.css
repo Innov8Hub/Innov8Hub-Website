@@ -5,21 +5,26 @@
     display: grid;
     grid-template-columns: 10vw 80vw;
 }
+.f-sec{
+}
 .f-main{
     display: flex;
     height: 80%;
     grid-column-start: 2;
+    grid-column-end: 3;
 }
 .f-main-section{
     height: 100%;
-    padding: 3vw 0;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    outline: 1px solid red;
 }
 #f-sec-1{
-    flex:1
+    flex:1;
 }
 #f-sec-2{
-    padding-left: 4vw;
-    flex:2;
+    margin-left: 2rem;
+    flex:3;
     display: flex;
     flex-direction: column;
 }
@@ -27,16 +32,17 @@
     flex:2
 }
 .f-main-section-mid2{
-    flex:3;
+    flex: 3;;
 }
 #f-sec-3{
-    flex:3;
+    flex:4;
     padding-left: 4vw;
 }
 .f-section-header{
     margin-bottom: 2.5vw;
     font-size: 1.7vw;
     font-weight: 500;
+    text-align: left;
 }
 .f-section-p{
     font-size: 0.75vw;

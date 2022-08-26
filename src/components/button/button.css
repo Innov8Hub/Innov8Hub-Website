@@ -11,6 +11,8 @@
 	font-weight: inherit;
 	z-index: 2;
 	transition: color 1s, background .5s;
+	font-family: inherit ;
+	text-transform: inherit;
 }
 .button-swipeGrad:after {
 	content: attr( value );

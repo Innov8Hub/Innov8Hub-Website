@@ -19,7 +19,7 @@ function Schprog() {
         <div className={`sp-wrapper ${spVisible ? "sp-wrapper-anim" : ""}`}>
             <div className="sp-text-wrapper">
                 <div className={`sp-text-header ${spVisible ? "sp-text-header-anim" : ""}`}><span style={{ color: "#326E35"}}>SCHOLARSHIP</span><br />PROGRAM</div>
-                <div className={`sp-text-cta ${spVisible ? "sp-text-cta-anim" : ""}`}>Learn More<div className="sp-cta-arrow"><AiOutlineArrowRight/></div></div>
+                <div className={`sp-text-cta ${spVisible ? "sp-text-cta-anim" : ""}`}>Coming Soon</div>
             </div>
             <div className="sp-illustration-wrapper">
                 <img src={ill} alt="" className={`sp-img ${spVisible ? "sp-img-anim" : ""}`} />

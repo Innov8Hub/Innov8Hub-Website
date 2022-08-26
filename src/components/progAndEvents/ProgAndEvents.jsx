@@ -15,9 +15,9 @@ import { AiOutlineArrowRight,AiOutlineLeft,AiOutlineRight } from "react-icons/ai
 import { SiPlex } from "react-icons/si";
 
 function ProgAndEvents() {
-  const parallax = useParallax({
-    speed: -10,
-  });
+  // const parallax = useParallax({
+  //   speed: -10,
+  // });
   let isDown = false;
   let startX;
   let scrollLeft;
@@ -104,7 +104,7 @@ function ProgAndEvents() {
       <img src={vectorBottom} alt="" className="vectorBottom" />
       
       <img src={innov8Logo} alt="" className="floatingLogo1" />
-        <div ref={parallax.ref}  className="pande-slider-wrapper">
+        <div   className="pande-slider-wrapper">
         <motion.div 
 
         initial="closed"
@@ -121,7 +121,9 @@ function ProgAndEvents() {
                 <h5 className="pande-card-header">TETFund Alliance For Innovative Research (TETFAIR)</h5>
                 <p style={{fontSize: ".74vw"}} className="pande-card-desc">TETFund Alliance for Innovatiove Research is an initiative designed to pull researchers and innovators from various tertiary institutions together under the same roof at the Innov8 Hub, to work on their researches or inventions with the aid of the aviable state-of-the art facilities and experts; as well as institutions in Israel.</p>
                 <div className="pande-cta-wrapper">
+                <a href="https://innov8hub.ng/tetfund-innovation-drive/">
                   <Button link="https://github.com/" variant="swipeGrad left-round green">Register Now</Button>
+                  </a>
                   <div className="pande-cta-arrow-wrapper"><div className="arrow-mover"><AiOutlineArrowRight className='arrow' style={{fill:"inherit"}}/></div></div>
                 </div> 
               </div>
@@ -134,7 +136,9 @@ function ProgAndEvents() {
                 <h5 className="pande-card-header">Pathway To Triple Helix Concept 2021</h5>
                 <p style={{fontSize: ".74vw"}} className="pande-card-desc">TETFund in partnership with Innov8 implements R&D Capacity Building program for Academics and Researchers. Researchers, scholars and innovators will go through a 10-day intensive developmental program on R&D procedure, ideation and prototype development.</p>
                 <div className="pande-cta-wrapper">
+                  <a href="https://innov8hub.ng/tetfund-innovation-drive/">
                   <Button link="https://github.com/" variant="swipeGrad left-round green">Register Now</Button>
+                  </a>
                   <div className="pande-cta-arrow-wrapper"><div className="arrow-mover"><AiOutlineArrowRight className='arrow' style={{fill:"inherit"}}/></div></div>
                 </div> 
               </div>
@@ -147,7 +151,9 @@ function ProgAndEvents() {
                 <h5 className="pande-card-header">Have an Innovative idea?</h5>
                 <p className="pande-card-desc">Apply for The Innovation Fellowship for Aspiring Inventors and Researchers (i-FAIR 2020/21)</p>
                 <div className="pande-cta-wrapper">
+                  <a href="https://ifair-israelnigeria.com/">
                   <Button link="https://github.com/" variant="swipeGrad left-round green">Register Now</Button>
+                  </a>
                   <div className="pande-cta-arrow-wrapper"><div className="arrow-mover"><AiOutlineArrowRight className='arrow' style={{fill:"inherit"}}/></div></div>
                 </div> 
               </div>
@@ -161,7 +167,9 @@ function ProgAndEvents() {
                 <h5 className="pande-card-header">Kids and Teens Coding and Robotics Holiday Programme</h5>
                 <p className="pande-card-desc">Let your kids acquire 21st century tech skills while working on fascinating projects in collaboration with other brilliant kids.</p>
                 <div className="pande-cta-wrapper">
+                  <a href="https://innov8hub.ng/k/">
                   <Button link="https://github.com/" variant="swipeGrad left-round green">Register Now</Button>
+                  </a>
                   <div className="pande-cta-arrow-wrapper"><div className="arrow-mover"><AiOutlineArrowRight className='arrow' style={{fontSize:"inherit", fill:"inherit"}}/></div></div>
                 </div> 
               </div>

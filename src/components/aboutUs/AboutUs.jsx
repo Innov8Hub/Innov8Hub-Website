@@ -31,7 +31,7 @@ function AboutUs() {
         <div className="au-text-wrapper">
           <div className="au-text-header">
             <h1 className="au-text-header-large">About <span style={{ color: "#EA7F1E"}}>Us</span></h1>
-            <h1 className="au-text-header-small">Innov8 Tech Hub</h1>
+            <h1 className="au-text-header-small">Innov8 Hub</h1>
           </div>
           <div className="au-text-ps">
             <p className="au-text-p1 au-p">

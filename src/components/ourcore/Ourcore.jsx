@@ -73,39 +73,45 @@ function Ourcore() {
                      colors="primary:#121331,secondary:#94d37b"
                     style={imgStyle}>
                 </lord-icon>
-                <h2 className="oc-card-header">Innovation Consulting</h2>
+                <h3 className="oc-card-header">Innovation</h3>
                 <p className="oc-card-desc">
-                Innov8 provides needed workspace, equipment and mentoring to people with ideas they hope to transfer into invention, innovation and solution.
-We incubate, groom and grow innovation start-ups.
+                We aid individuals in transforming 
+their ideas into invention, invention 
+into solution, solution into entreprise. 
+Innov8 Hub is the focal point for developing 
+ideas into innovation and prototypes.
                 </p>
                 <span className="span1"></span>
             </div>
             <div className="oc-card"   >
+                
                 <lord-icon
-                    src="https://cdn.lordicon.com/zpxybbhl.json"
-                    trigger="hover"
-                    delay="2000"
-                    colors="primary:#121331,secondary:#08a88a"
-                    style={imgStyle}>
-                </lord-icon>
-                <h2 className="oc-card-header">Start-Up Incubation</h2>
+    src="https://cdn.lordicon.com/sbiheqdr.json"
+    trigger="hover"
+    style={imgStyle}>
+</lord-icon>
+                <h3 className="oc-card-header">Research & Development</h3>
                 <p className="oc-card-desc">
-                We offer extensive product development services, expert design and engineering, advanced CAD services, mechanical design services and prototyping.
-We create and test fully-functional prototypes as proof of concept.
+                At Innov8, we support organizatons and 
+individuals searching to find new ways 
+of doing things, and improve on 
+existing innovations
                 </p>
                 <span className="span1"></span>
             </div>
             <div className="oc-card"   >
-                <lord-icon
-                    src="https://cdn.lordicon.com/zpxybbhl.json"
-                    trigger="hover"
-                    delay="2000"
-                    colors="primary:#121331,secondary:#08a88a"
-                    style={imgStyle}>
-                </lord-icon>
-                <h2 className="oc-card-header">Human Capital Development</h2>
+            <lord-icon
+    src="https://cdn.lordicon.com/aqajnirr.json"
+    trigger="hover"
+    style={imgStyle}>
+</lord-icon>
+                    
+                <h3 className="oc-card-header">Prototype Development</h3>
                 <p className="oc-card-desc">
-                Through our expertise network of partnerships, we provide strategic direction / mentoring to organisations and individuals looking to implement new development in innovation startup.
+                Innov8 Hub facilitates the processes and 
+procedures of prototype development 
+and proof of concept for individuals 
+and start-ups
                 </p>
                 <span className="span1"></span>
             </div>
@@ -113,46 +119,51 @@ We create and test fully-functional prototypes as proof of concept.
         <div className="oc-cards-wrapper">
         <div className="lady" style={ladyStyle}></div>
             <div className="oc-card oc-card-1"  >
+            <lord-icon
+                    src="https://cdn.lordicon.com/zpxybbhl.json"
+                    trigger="hover"
+                    delay="2000"
+                    colors="primary:#121331,secondary:#08a88a"
+                    style={imgStyle}>
+                </lord-icon>
                 
-                <lord-icon
-                     src="https://cdn.lordicon.com/nobciafz.json"
-                     trigger="hover"
-                     colors="primary:#121331,secondary:#94d37b"
-                    style={imgStyle}>
-                </lord-icon>
-                <h2 className="oc-card-header">Innovation Consulting</h2>
-                <p className="oc-card-desc">
-                Innov8 provides needed workspace, equipment and mentoring to people with ideas they hope to transfer into invention, innovation and solution.
-We incubate, groom and grow innovation start-ups.
-                </p>
-                <span className="span1"></span>
-            </div>
-            <div className="oc-card"   >
-                <lord-icon
-                    src="https://cdn.lordicon.com/zpxybbhl.json"
-                    trigger="hover"
-                    delay="2000"
-                    colors="primary:#121331,secondary:#08a88a"
-                    style={imgStyle}>
-                </lord-icon>
-                <h2 className="oc-card-header">Start-Up Incubation</h2>
-                <p className="oc-card-desc">
-                We offer extensive product development services, expert design and engineering, advanced CAD services, mechanical design services and prototyping.
-We create and test fully-functional prototypes as proof of concept.
-                </p>
-                <span className="span1"></span>
-            </div>
-            <div className="oc-card"   >
-                <lord-icon
-                    src="https://cdn.lordicon.com/zpxybbhl.json"
-                    trigger="hover"
-                    delay="2000"
-                    colors="primary:#121331,secondary:#08a88a"
-                    style={imgStyle}>
-                </lord-icon>
-                <h2 className="oc-card-header">Human Capital Development</h2>
+                <h3 className="oc-card-header">Innovation Consulting</h3>
                 <p className="oc-card-desc">
                 Through our expertise network of partnerships, we provide strategic direction / mentoring to organisations and individuals looking to implement new development in innovation startup.
+                </p>
+                <span className="span1"></span>
+            </div>
+            <div className="oc-card"   >
+            <lord-icon
+    src="https://cdn.lordicon.com/hbbeevsh.json"
+    trigger="hover"
+    style={imgStyle}>
+</lord-icon>
+                <h3 className="oc-card-header">Start-Up Incubation</h3>
+                <p className="oc-card-desc">
+                The Hub is a platform for 
+entrepreneurs to accelerate their 
+enterprises, and for start-ups 
+to be incubated for growth 
+and investment. 
+                </p>
+                <span className="span1"></span>
+            </div>
+            <div className="oc-card"   >
+            <lord-icon
+    src="https://cdn.lordicon.com/baiwwlyi.json"
+    trigger="hover"
+    style={imgStyle}>
+</lord-icon>
+                <h3 className="oc-card-header">Human Capital Development</h3>
+                <p className="oc-card-desc">
+                Innov8 offers courses in several 
+fields of expertise. The training 
+content will impart beneficiaries 
+with knowledge and skills as well
+ as strategic direction for 
+self-sustainability and 
+development.
                 </p>
                 <span className="span1"></span>
             </div>

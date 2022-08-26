@@ -13,6 +13,9 @@ import RotLogo from "./components/rotLogo/RotLogo";
 import  Button  from  "./components/button/Button";
 import AboutUs from "./components/aboutUs/AboutUs";
 import Schprog from "./components/schprog/Schprog";
+import Testimonials from "./components/testimonials/Testimonials";
+import RecentFeeds from "./components/recentFeeds/RecentFeeds";
+import DontMiss from "./components/dontMiss/DontMiss";
 
 const App = () => {
   return <ParallaxProvider>
@@ -25,6 +28,9 @@ const App = () => {
     <ProgAndEvents/>
     <Partners/>
     <Schprog/>
+    <RecentFeeds/>
+    <DontMiss/>
+    <Testimonials/>
     <Footer/>
     </ParallaxProvider>;
 };
