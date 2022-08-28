@@ -36,17 +36,16 @@ svg{
     height: auto;
 }
 .rfc-text{
-    vertical-align: middle;
     margin-left: 0.43em;
-    
+    transform: translateY(-10%);
 }
 .rfc-comments,.rfc-likes{
     font-size: 1.19em;
-    line-height: 20px;
     font-weight: bold;
     color: #A09E9E;
     display: flex;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .liked{
     color: #A09E9E;

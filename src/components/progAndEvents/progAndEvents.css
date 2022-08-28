@@ -206,7 +206,7 @@ z-index: 5;
         top:0;
         left: 0;
         border-radius: 5em;
-        transition: 1s;
+        transition: 2s;
         transform: translateX(0px);
     }
     .pande-card-header{
@@ -224,7 +224,7 @@ z-index: 5;
     }
     .cont{
         
-        padding: 0 2em;
+        padding: 0 3em;
     }
     .pande-cta-wrapper{
         font-size: 1em;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useEffect, useState } from 'react';
 import './hero.css'
 import heroMain from '../../images/hero/hero.svg'
@@ -7,11 +7,16 @@ import heroBack from '../../images/hero/heroback.svg'
 import heroBack1 from '../../images/hero/heroback3.svg'
 import heroBack2 from '../../images/hero/heroback2.svg'
 import { useParallax } from 'react-scroll-parallax'
+import innov8learn from "../../images/hero/innov8Learn.svg"
+import tetfair from "../../images/hero/Tetfair.svg"
 
 function Hero() {
-  const [robotized , setRobotized] = useState("false");
+  var [robotized , setRobotized] = useState(0);
+  const Stage = useRef()
   const handleRobot =() =>{
-    setRobotized(!robotized);
+    Stage+= 1;
+
+    setRobotized(Stage);
   }
     const parallax = useParallax({
         speed: 10,
@@ -19,26 +24,39 @@ function Hero() {
     const parallax2 = useParallax({
         speed: -10,
       });
-    const parallax3 = useParallax({
-        speed: -20,
-      });
+    // const parallax3 = useParallax({
+    //     speed: -20,
+    //   });
+    useEffect(()=>{ var i =0;setInterval(()=>{
 
-    useEffect(()=>{setTimeout(()=>{setRobotized(!robotized);},5000)})
+      i +=1 ;
+      if (i === 4){
+        i =0
+      }
+      setRobotized(i);console.log({i})
+    },7000)},[])
 
   return (
-    <div className={`h ${robotized ? "" : "h-robotTime"}`} onClick={handleRobot}>
+    <div className={`h ${" h-"+robotized}`} onClick={handleRobot}>
         <div ref={parallax2.ref} className="h-grid-wrapper">
             <div className="h-node-1">
-              <div className={`h-node-1-text ${robotized ? "" : "moved-text"}`}> Innovation <span ref={parallax3.ref} style={{ color: "#EA7F1E"}}>Start-up</span> Hub</div>
-              <div className={`h-node-1-text robot-text ${robotized ? "moved-text" : ""}`}> Robotics <span ref={parallax3.ref} style={{ color: "#EA7F1E"}}>Club</span> </div>
+              <div className={`h-node-1-text ${robotized === 0? "" : "moved-text"}`}> Innovation <span style={{ color: "#EA7F1E"}}>Start-up</span> Hub</div>
+              <div className={`h-node-1-text robot-text ${robotized === 1 ? "" : "moved-text"}`}> <span style={{ color: "white"}}>Innov8 </span><span  style={{ color: "#EA7F1E"}}>Learn</span> </div>
+              <div className={`h-node-1-text robot-text ${robotized === 2 ? "" : "moved-text"}`}> <span style={{ color: "#172518"}}>Robotics Club</span> </div>
+              <div className={`h-node-1-text robot-text-h ${robotized === 3 ? "" : "moved-text"}`}> <span style={{ color: "#172518"}}>TETFund Alliance For Innovative Research (TETFAIR)</span></div>
             </div>
         <div className="h-node-2">
-          <div className="node2-text1 text-node2">Innovation | Invention | Start-up Incubation | <br />
+          <div className={`node2-text2 text-node2 ${robotized === 0 ? "" : "hidden-text2"}`}><span style={{ color: "white"}}>Innovation | Invention | Start-up Incubation | <br />
             Technology Transfer | Research and Development |
             Prototype Development | Fabrication | Hman Capital Development|
             mentorship.
+            </span>
           </div>
-          <div className={`node2-text2 text-node2 ${robotized ? "hidden-text2" : ""}`}>Let your kids acquire 21st century tech skills while working on fascinating projects in collaboration with other brilliant kids.
+          <div className={`node2-text2 text-node2 ${robotized === 1 ? "" : "hidden-text2"}`}><span style={{ color: "white"}}>A platform that offers a carefully curated number of courses to develop capacity in STEM (Primary, Secondary & Tertiary), Communication, and other relevant  skills for navigating the modern world.</span>
+          </div>
+          <div className={`node2-text2 text-node2 ${robotized === 2 ? "" : "hidden-text2"}`}>Let your kids acquire 21st century tech skills while working on fascinating projects in collaboration with other brilliant kids.
+          </div>
+          <div className={`node2-text2 text-node2 ${robotized === 3 ? "" : "hidden-text2"}`}>An initiative designed to pull researchers and innovators from various tertiary institutions together under the same roof at the Innov8 Hub, to work on their researches or inventions.
           </div>
 
         </div>
@@ -49,10 +67,19 @@ function Hero() {
         <img ref={parallax.ref} src={heroBack1} alt="" className={` h-img-back${robotized ? "" : " move-back1"}`}/>
         
         <div class="container">
-  <div className={`carousel ${robotized ? "" : "robotTime"}`} >
-    <div className={`item a ${robotized ? "" : "hidden"}`}>
-        <img src={heroMain} alt="" className="h-imgs h-img-main" /></div>
-    <div className={`item b ${robotized ? "hidden" : ""}`}><img src={heroMain2} alt="" className="h-imgs h-img-main2" /></div>
+  <div className={`carousel ${"carousel-"+robotized}`} >
+    <div className={`item a ${robotized === 0 ? "" : "hidden"}`}>
+        <img src={heroMain} alt="" className="h-imgs h-img-main" />
+    </div>
+    <div className={`item b ${robotized === 1 ? "" : "hidden"}`}>
+        <img src={innov8learn} alt="" className="h-imgs h-img-main2" />
+    </div>
+    <div className={`item c ${robotized === 2 ? "" : "hidden"}`}>
+        <img src={heroMain2} alt="" className="h-imgs h-img-main2" />
+    </div>
+    <div className={`item d ${robotized === 3 ? "" : "hidden"}`}>
+        <img src={tetfair} alt="" className="h-imgs h-img-main" />
+    </div>
   </div>
 </div>
 {/* 

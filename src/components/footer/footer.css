@@ -17,16 +17,19 @@
     height: 100%;
     padding-top: 3vw;
     padding-bottom: 3vw;
-    outline: 1px solid red;
 }
-#f-sec-1{
-    flex:1;
+.f-sec-1{
+    flex:2;
 }
-#f-sec-2{
-    margin-left: 2rem;
-    flex:3;
+.f-logo{
+    width: 7vw;
+    margin-top:1em;
+}
+.f-sec-2{
+    flex:2;
     display: flex;
     flex-direction: column;
+    padding-left: 4em;
 }
 .f-main-section-mid1{
     flex:2
@@ -34,18 +37,24 @@
 .f-main-section-mid2{
     flex: 3;;
 }
-#f-sec-3{
-    flex:4;
-    padding-left: 4vw;
+.f-sec-3{
+    flex:3;
+    padding-left: 4em;
+}
+.f-facebook-header{
+    
+        display: flex;
+        justify-content: left;
+        align-items: center;
 }
 .f-section-header{
-    margin-bottom: 2.5vw;
-    font-size: 1.7vw;
-    font-weight: 500;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
     text-align: left;
 }
 .f-section-p{
-    font-size: 0.75vw;
+    font-size: .8em;
 }
 .f-copy{
     width: 100%;
@@ -58,6 +67,7 @@
     .f-main{
         flex-direction: column;
         align-items: center;
+        margin: 5rem 0;
     }
     .f-section-header{
         margin-bottom: 2.5vw;
@@ -69,5 +79,11 @@
     }
     .f-main-section{
         min-width: 80vw;
+    }
+    .f-sec{
+        margin: 0;
+        padding: 0;
+    }
+    .f-sec-3{
     }
 }

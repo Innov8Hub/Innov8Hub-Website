@@ -105,8 +105,8 @@ function ProgAndEvents() {
   return (
     <div id="programs" className='pande' ref={ref}>
       <div className="pande-controls-wrapper">
-        <div onClick={moveLeft} className="pande-control pande-controls-left"><SiPlex/></div>
-        <div onClick={moveRight} className="pande-control pande-controls-right"><SiPlex/></div>
+        <div onClick={moveRight} className="pande-control pande-controls-left"><SiPlex/></div>
+        <div onClick={moveLeft} className="pande-control pande-controls-right"><SiPlex/></div>
       </div>
       <img src={vector} alt="" className="vector" />
       <img src={vectorBottom} alt="" className="vectorBottom" />
@@ -167,8 +167,9 @@ function ProgAndEvents() {
               </div>
             </motion.div>
             <motion.div className="pande-slider-card back1" variants={item}>
-            <img src={standingLady} alt="" className="standingLady" />
+            
               <div className="cont">
+              <img src={standingLady} alt="" className="standingLady" />
                 <div className="pande-img-wrapper">
                   <img src={innov8Learn} alt="" className="pande-card-img" />
                 </div>
