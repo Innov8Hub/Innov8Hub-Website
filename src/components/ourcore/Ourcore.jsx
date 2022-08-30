@@ -31,7 +31,7 @@ function Ourcore() {
         position:`absolute`,
         width:`32vw`,
         height:`8vw`,
-        bottom:`9vw`,
+        bottom:`8.5vw`,
         transform:`translateX(-34%)`,
         zIndex:`2`,
         pointerEvents:"none"
@@ -69,7 +69,7 @@ function Ourcore() {
             <div className="oc-card"  >
                 <lord-icon
                      src="https://cdn.lordicon.com/nobciafz.json"
-                     trigger="hover"
+                     trigger="loop"
                      colors="primary:#121331,secondary:#94d37b"
                     style={imgStyle}>
                 </lord-icon>
@@ -87,7 +87,7 @@ ideas into innovation and prototypes.
                 
                 <lord-icon
     src="https://cdn.lordicon.com/sbiheqdr.json"
-    trigger="hover"
+    trigger="loop"
     style={imgStyle}>
 </lord-icon>
                 <h3 className="oc-card-header">Research & Development</h3>
@@ -102,7 +102,7 @@ existing innovations
             <div className="oc-card"   >
             <lord-icon
     src="https://cdn.lordicon.com/aqajnirr.json"
-    trigger="hover"
+    trigger="loop"
     style={imgStyle}>
 </lord-icon>
                     
@@ -121,7 +121,7 @@ and start-ups
             <div className="oc-card oc-card-1"  >
             <lord-icon
                     src="https://cdn.lordicon.com/zpxybbhl.json"
-                    trigger="hover"
+                    trigger="loop"
                     delay="2000"
                     colors="primary:#121331,secondary:#08a88a"
                     style={imgStyle}>
@@ -136,7 +136,7 @@ and start-ups
             <div className="oc-card"   >
             <lord-icon
     src="https://cdn.lordicon.com/hbbeevsh.json"
-    trigger="hover"
+    trigger="loop"
     style={imgStyle}>
 </lord-icon>
                 <h3 className="oc-card-header">Start-Up Incubation</h3>
@@ -152,7 +152,7 @@ and investment.
             <div className="oc-card"   >
             <lord-icon
     src="https://cdn.lordicon.com/baiwwlyi.json"
-    trigger="hover"
+    trigger="loop"
     style={imgStyle}>
 </lord-icon>
                 <h3 className="oc-card-header">Human Capital Development</h3>

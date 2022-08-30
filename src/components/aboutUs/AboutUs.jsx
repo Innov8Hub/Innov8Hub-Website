@@ -36,7 +36,7 @@ function AboutUs() {
           </div>
           <div className="au-text-ps">
             <p className="au-text-p1 au-p">
-            Innov8 Hub is an Innovation Startup driven organisation with a mandate to groom generations of INNOVATORS, INVENTORS and RESEARCHERS across board.
+            Innov8 Hub is an Innovation Startup driven organisation with a mandate to groom generations of <b>INNOVATORS</b>, <b>INVENTORS</b> and <b>RESEARCHERS</b> across board.
 Innov8 is a focal point for Innovation Startup Incubation, Technology Transfer, Knowledge and Skill Impartation, Prototype Development and Fabrication.
 
             </p>

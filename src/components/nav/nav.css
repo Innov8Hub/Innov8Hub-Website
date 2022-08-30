@@ -206,7 +206,7 @@
   height: 50px;
   width: 100%;
   left: 0;
-  bottom:115px
+  top:55vh
 }
 @media screen and (max-width: 600px) {
     .n{

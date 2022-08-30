@@ -51,10 +51,10 @@ function footer() {
       </div>
       <div className="f-copy"><div className="f-copy-inner"><div className="f-copy-at">Copyright &copy; 2022 Innov8 Hub | Powered by Innov8 Hub</div>
       <div className="f-copy-socials">
-        <a classname="f-copy-social-link" href=""><AiFillLinkedin/></a>
-        <a classname="f-copy-social-link" href=""><AiFillFacebook/></a>
-        <a classname="f-copy-social-link" href=""><FaTwitterSquare/></a>
-        <a classname="f-copy-social-link" href=""><AiFillInstagram/></a>
+        <a classname="f-copy-social-link" href="https://www.linkedin.com/company/innov8hub/"><AiFillLinkedin/></a>
+        <a classname="f-copy-social-link" href="https://www.facebook.com/Innov8hub.ng"><AiFillFacebook/></a>
+        <a classname="f-copy-social-link" href="https://twitter.com/innov8hub"><FaTwitterSquare/></a>
+        <a classname="f-copy-social-link" href="https://www.instagram.com/innov8hub.ng/"><AiFillInstagram/></a>
         <a classname="f-copy-social-link" href="https://www.youtube.com/channel/UC5K-fpwQti3DKkkgyR44PtA"><FaYoutube/></a>
       </div>
       </div></div>

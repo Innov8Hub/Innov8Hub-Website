@@ -108,6 +108,12 @@
     bottom: 0;
     right: 0;
 }
+.au-text-header-large{
+    text-align: left;
+}
+.au-text-header-small{
+    text-align: left;
+}
 @media screen and (max-width: 600px) {
     .au-vid-wrapper{
         justify-content: center;

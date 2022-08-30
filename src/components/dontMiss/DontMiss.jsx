@@ -23,7 +23,7 @@ const myRef = useRef();
         <div className={`dm-bell ${dmVisible ? "dm-bell-hide" : ""}`} >
           <lord-icon
               src="https://cdn.lordicon.com/ndydpcaq.json"
-              trigger="hover"
+              trigger="loop"
               style={imgStyle}>
           </lord-icon>
         </div>
