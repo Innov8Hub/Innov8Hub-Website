@@ -13,6 +13,8 @@
 	transition: color 1s, background .5s;
 	font-family: inherit ;
 	text-transform: inherit;
+	
+    letter-spacing: inherit;
 }
 .button-swipeGrad:after {
 	content: attr( value );

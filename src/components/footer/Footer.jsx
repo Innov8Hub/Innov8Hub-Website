@@ -1,9 +1,14 @@
 import React from 'react'
 import FacebookPosts from '../facebookPosts/FacebookPosts'
 import "./footer.css"
-import {FaFacebookSquare} from 'react-icons/fa'
+import {FaFacebookSquare, FaInstagram, FaYoutube} from 'react-icons/fa'
 import logo from '../../images/Innov8 LOGO.svg'
-
+import {AiFillLinkedin} from 'react-icons/ai'
+import {AiFillFacebook} from 'react-icons/ai'
+import {AiFillTwitterCircle} from 'react-icons/ai'
+import {AiFillInstagram} from 'react-icons/ai'
+import {AiFillYoutube} from 'react-icons/ai'
+import {FaTwitterSquare} from 'react-icons/fa'
 
 function footer() {
   return (
@@ -44,7 +49,15 @@ function footer() {
             <FacebookPosts/>
         </section>
       </div>
-      <div className="f-copy"></div>
+      <div className="f-copy"><div className="f-copy-inner"><div className="f-copy-at">Copyright &copy; 2022 Innov8 Hub | Powered by Innov8 Hub</div>
+      <div className="f-copy-socials">
+        <a classname="f-copy-social-link" href=""><AiFillLinkedin/></a>
+        <a classname="f-copy-social-link" href=""><AiFillFacebook/></a>
+        <a classname="f-copy-social-link" href=""><FaTwitterSquare/></a>
+        <a classname="f-copy-social-link" href=""><AiFillInstagram/></a>
+        <a classname="f-copy-social-link" href="https://www.youtube.com/channel/UC5K-fpwQti3DKkkgyR44PtA"><FaYoutube/></a>
+      </div>
+      </div></div>
     </div>
   )
 }

@@ -61,18 +61,21 @@
 
 @media screen and (max-width: 600px) { 
     .dm-wrapper{
-        padding-bottom: 6em;
-        padding-top: 0;
+        padding-bottom: 10em;
+        padding-top: 1rem;
     }
     .dm-content{
         flex-direction: column;
     }
     .dm-form-wrapper {
         margin: 0;
-        bottom: -5.18em;
+        bottom: -6em;
     }
     .dm-text-wrapper{
         text-align: center;
         margin: 0;
+    }
+    .dm-bell-wrapper{
+        border-bottom: 4px solid;
     }
 }

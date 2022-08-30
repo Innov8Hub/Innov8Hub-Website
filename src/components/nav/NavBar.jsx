@@ -26,6 +26,7 @@ function NavBar() {
         <ul className="n-links">
             <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Home</Button></a></li>
             <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Innov8Learn</Button></a></li>
+            <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Applications</Button></a></li>
             <li className="n-link"><a href='#programs'><Button variant="swipeGrad lightgreen">Programs</Button></a></li>
             <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Gallery</Button></a></li>
             <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Feeds</Button></a></li>
@@ -42,10 +43,12 @@ function NavBar() {
     <ul onClick={undo} ref={check}id="menu">
       <a href="#"><li>Home</li></a>
       <a href="#"><li>Innov8Learn</li></a>
+      <a href="#"><li>Applications</li></a>
       <a href="#programs"><li>Programs</li></a>
       <a href="#"><li>Gallery</li></a>
       <a href="#"><li>Feeds</li></a>
       <a href="#"><li>Contact</li></a>
+      <li className="n-socials"></li>
     </ul>
   </div>
               </div>

@@ -78,7 +78,7 @@
       --card-width: 12em;
       --card-max-width: 22em;
       --card-height: 350px;
-      --carousel-min-width: 600px;
+      --carousel-min-width: 10em;
       z-index: 1;
       position: relative;
       margin: 0 auto;
@@ -90,6 +90,8 @@
   }
   .container-m{
     overflow: hidden;
+    padding-bottom: 4em;
+    margin:7em 0;
   }
   
   .card-carousel.smooth-return {
@@ -113,7 +115,7 @@
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3); */
     /* border-radius: 1em; */
     
-    border: 0.19em solid #94D37B;
+    border: 0.19em solid rgb(148, 211, 123,.4);
     border-radius: 0.94em;
     filter: brightness(.9);
     display: flex;

@@ -6,6 +6,7 @@ import Button from '../button/Button'
 import leaf from "../../images/aboutUs/leaves.svg"
 import vectorBottom from  "../../images/vector-bottom.svg"
 import vector from "../../images/VectorWite.png"
+import YoutubeEmbed from '../youtubeEmbed/YoutubeEmbed';
 
 function AboutUs() {
   const parallax = useParallax({
@@ -26,7 +27,7 @@ function AboutUs() {
       <div ref={parallax2.ref} className="au-bgC2 au-bgC"></div>
       <div className="au-wrapper">
         <div className="au-vid-wrapper">
-          <div ref={parallax3.ref} className="vid-proto">PLACEHOLDER</div>
+          <div ref={parallax3.ref} className="vid-proto"><YoutubeEmbed embedId="z4VUTYvzazs"/></div>
         </div>
         <div className="au-text-wrapper">
           <div className="au-text-header">

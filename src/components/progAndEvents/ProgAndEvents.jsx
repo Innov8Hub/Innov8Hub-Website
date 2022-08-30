@@ -106,6 +106,7 @@ function ProgAndEvents() {
     <div id="programs" className='pande' ref={ref}>
       <div className="pande-controls-wrapper">
         <div onClick={moveRight} className="pande-control pande-controls-left"><SiPlex/></div>
+        
         <div onClick={moveLeft} className="pande-control pande-controls-right"><SiPlex/></div>
       </div>
       <img src={vector} alt="" className="vector" />
