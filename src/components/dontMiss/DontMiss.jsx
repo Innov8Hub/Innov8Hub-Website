@@ -1,6 +1,7 @@
 import {React, useRef, useState, useEffect} from 'react'
 import Newsletter from '../newsletter/Newsletter'
 import './dontMiss.css'
+import sittingLady from '../../images/dm/womanSitting.png'
 function DontMiss() {
   const imgStyle={
     width:"100%",height:"5rem"
@@ -33,6 +34,7 @@ const myRef = useRef();
         </div>
       <div className={`dm-form-wrapper ${dmVisible ? "dm-form-wrapper-hide" : ""}`} >
         <Newsletter/>
+        <img src={sittingLady} alt="" className="dm-sittingLady" />
       </div>
       </div>
     </div>

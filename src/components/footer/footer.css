@@ -83,6 +83,7 @@
     justify-content: space-between;
     margin: 0 1rem;
     font-size: 1.4rem;
+    color: rgba(0,0,0,0.7);
 }
 .f-copy-socials a :hover{
     color: #635831;
@@ -115,7 +116,7 @@
         height: fit-content;
     }
     .f-copy-at{
-        font-size: .9rem;
+        font-size: .7rem;
         margin: 1rem;
     }
     .f-copy-inner{

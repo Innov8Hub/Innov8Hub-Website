@@ -113,6 +113,7 @@
 }
 .au-text-header-small{
     text-align: left;
+    margin-top: 0;
 }
 @media screen and (max-width: 600px) {
     .au-vid-wrapper{
@@ -124,9 +125,11 @@
     }
     .au-text-header-large{
         text-align: center;
+        margin-top: 0rem;
     }
     .au-text-header-small{
         text-align: center;
+        margin-top: 0rem;
     }
     .au-bgC{
         height: 400px;

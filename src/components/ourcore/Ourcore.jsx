@@ -1,11 +1,24 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import './ourcore.css'
 import lady from '../../images/oc-lady.png'
 import lightbulb from "../../images/lightbulb.svg"
 import loop from "../../images/loop.svg"
 import { useParallax } from 'react-scroll-parallax'
 
+
 function Ourcore() {
+    const [width, setWidth] = useState(window.innerWidth);
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
+    
+    const isMobile = width <= 768;
     const parallax = useParallax({
         speed: -10,
       });
@@ -34,8 +47,10 @@ function Ourcore() {
         bottom:`8.5vw`,
         transform:`translateX(-34%)`,
         zIndex:`2`,
-        pointerEvents:"none"
+        pointerEvents:"none",
+        display:"block"
     }
+    isMobile?ladyStyle.display="none": ladyStyle.display="block"
     const imgStyle={
         width:"5rem",height:"5rem"
     }

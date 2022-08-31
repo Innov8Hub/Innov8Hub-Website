@@ -41,6 +41,10 @@
     width: 100%;
 }
 @media screen and (max-width: 480px) {
+    .pts-header{
+        font-size: 2.5vw;
+        margin-top: 3rem;
+    }
     .pts-companies{
         flex-direction: row;
     }

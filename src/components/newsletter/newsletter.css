@@ -3,7 +3,7 @@
 }
 .nl-form input{
     width: 30vw;
-    height: 4.50em;
+    height: 4rem;
     padding: 0;
     border:2px solid #326E35 ;
     border-radius: 1em 0 0 1em;
@@ -15,7 +15,6 @@
     text-align: left;
 }
 .nl-button{
-    height: 4.00em;
     position: relative;
     width:190px;
     background-color: #326E35;

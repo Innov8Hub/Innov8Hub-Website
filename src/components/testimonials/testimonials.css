@@ -102,6 +102,7 @@
     cursor: grab;
     background: white;
     width: var(--card-width);
+    height: 100%;
     max-width: var(--card-max-width);
     text-align: center;
     padding: 1em;

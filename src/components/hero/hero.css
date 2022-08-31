@@ -136,6 +136,30 @@ background-color: white;
     transition: opacity .2s, transform 1s;
     width: fit-content;
 }
+.h-node-3-logo-wrapper{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.node-3-logo{
+  width: 100px;
+  transform: translateY(-100%);
+  transition: 3s;
+}
+.node-3-logo-hidden1{
+  animation: downLogo .3s .5s forwards ;
+}
+.node-3-logo-hidden2{
+  animation: downLogo .3s 1s forwards ;
+}
+@keyframes downLogo {
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
 .robot-text{
   position: absolute;
   top:0;
@@ -144,7 +168,6 @@ background-color: white;
 .robot-text-h{
   position: absolute;
   top:0;
-  transform: translateY(0%);
   width: 100%;
   color:black
 }
@@ -400,9 +423,16 @@ background-color: white;
     grid-template-rows: 20vh 10vh;
     }
     .h-img-main{
+        height: 20vh;
+    }
+    .innov8Learn{
+      height: 20vh;
+      bottom: -2rem;
+    }
+    /* .h-img-main{
         width: 100%;
         bottom: 0;
-    }
+    } */
 
     .h-node-1{
         text-align: center;
@@ -431,6 +461,9 @@ background-color: white;
     }
     .node2-text2{
       text-align: center;
+    }
+    .h-node-3-logo-wrapper{
+      justify-content: space-between;
     }
     .move-back1{
       height: 20vh;

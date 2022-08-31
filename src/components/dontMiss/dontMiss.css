@@ -57,7 +57,13 @@
 .dm-form-wrapper-hide{
     transform: translateX(0);
 }
-
+.dm-sittingLady{
+    position: absolute;
+    width: 7.9375rem;
+    right:0;
+    top:0;
+    transform: translate(35%,-60%);
+}
 
 @media screen and (max-width: 600px) { 
     .dm-wrapper{
@@ -74,6 +80,7 @@
     .dm-text-wrapper{
         text-align: center;
         margin: 0;
+        margin-bottom: 2rem;
     }
     .dm-bell-wrapper{
         border-bottom: 4px solid;

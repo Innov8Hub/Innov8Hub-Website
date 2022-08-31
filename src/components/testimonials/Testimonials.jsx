@@ -344,13 +344,29 @@ const carousel = new CardCarousel(cardsContainer)
     </div>
     <div className="card" id="2">
     <img src={p1} alt="" className="ts-person" />
-                <h1 className="ts-header">Benson Chinaza</h1>
-                <p className="ts-paragraph">Innov8 Hub helped me transform my idea into invention by providing mentors, equipment, materials, an enabling environment and technical support with which I was able to build a prototype of my invention (TRANSMODE)</p>
+                <h1 className="ts-header">Ige Olaniyan</h1>
+                <p className="ts-paragraph">At iFAIR, we had the opportunity to have worked with gifted scientists and experts within their rights.</p>
     </div>
     <div className="card" id="3">
     <img src={p1} alt="" className="ts-person" />
-                <h1 className="ts-header">Benson Chinaza</h1>
-                <p className="ts-paragraph">Innov8 Hub helped me transform my idea into invention by providing mentors, equipment, materials, an enabling environment and technical support with which I was able to build a prototype of my invention (TRANSMODE)</p>
+                <h1 className="ts-header">Gideon Onyewuenyi</h1>
+                <p className="ts-paragraph">
+                iFAIR has helped by providing a workspace, equipment and mentors while enabling us to transform our idea into an innovative solution and build a prototype ready for industrial uptake.
+                </p>
+    </div>  
+    <div className="card" id="4">
+    <img src={p1} alt="" className="ts-person" />
+                <h1 className="ts-header">Soilless farm</h1>
+                <p className="ts-paragraph">
+                iFAIR helped us redesign our system to be much more functional and aesthetically pleasing.
+                </p>
+    </div>  
+    <div className="card" id="5">
+    <img src={p1} alt="" className="ts-person" />
+                <h1 className="ts-header">Josiah Owura</h1>
+                <p className="ts-paragraph">
+                iFAIR has been of tremendous help to this product by providing me with excellent business and technical mentorship and a state-of-the-art lab, which has helped move the product from an ideation stage to a functional prototype.
+                </p>
     </div>  
     
   </div>
