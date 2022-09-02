@@ -122,6 +122,10 @@ background-color: white;
   opacity: 0;
   transform: translateY(200px);
 }
+.h-node-3-cta-hidden-last{
+  opacity: 0;
+  transform: translateX(-200px);
+}
 .h-cta-green{
   background-color: #326E35;
   color: white;
@@ -140,6 +144,7 @@ background-color: white;
   display: flex;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 .node-3-logo{
   width: 100px;
@@ -414,10 +419,24 @@ background-color: white;
   transform: translate(-50%, -20%);
 }
 
-
+.test-button{
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  left:200px;
+  top:0;
+  display: flex;
+  justify-content: right;
+  align-items:center;
+  overflow: hidden;
+}
+.delayMe{
+  opacity: 1;
+  transition: transform 1s .2s;
+}
 @media screen and (max-width: 1000px) {
     .h-grid-wrapper{
-
+      margin-top: 3rem;
     grid-template-columns: 10vw minmax(auto,1400px) 10vw ;
 
     grid-template-rows: 20vh 10vh;
@@ -519,5 +538,17 @@ background-color: white;
       top:10%;
       left:0;
       transform: translate(0%, -20%);
+    }
+    .test-button{
+      left:50%;
+      top:5em;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items:flex-end;
+    }
+    .h-node-3-cta-hidden-last{
+      opacity: 0;
+      transform: translateY(200px);
     }
 }

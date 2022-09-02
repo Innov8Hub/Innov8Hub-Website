@@ -17,7 +17,7 @@
 .rf-cards-wrapper{
     display: flex;
     justify-content: space-between;
-    margin-top: 4.9rem;
+    margin-top: 2rem;
     margin-bottom: 6.81em;
 }
 .rf-card{
@@ -28,6 +28,7 @@
 @media screen and (max-width: 600px) {
     .rf-cards-wrapper{
         flex-direction: column;
+        margin-top: 0.9000000000000004rem;
     }
     .rf-card{
         margin-bottom: 2rem;

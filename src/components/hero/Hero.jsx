@@ -15,6 +15,7 @@ import greenSmallrob from "../../images/hero/greenSmall.svg"
 import orangeSmallrob from "../../images/hero/orangeSmall.svg"
 import logo from '../../images/Innov8 LOGO.svg'
 import tetfund from '../../images/partners/ptr-img4.png'
+import Button from '../button/Button';
 
 function Hero() {
   var [robotized , setRobotized] = useState(0);
@@ -33,7 +34,7 @@ function Hero() {
     // const parallax3 = useParallax({
     //     speed: -20,
     //   });
-    useEffect(()=>{ var i =3;
+    useEffect(()=>{ var i =0;
       setRobotized(i)
       setInterval(()=>{
 
@@ -81,6 +82,10 @@ function Hero() {
             <img src={logo} alt="" className={`node-3-logo ${robotized === 3 ? " node-3-logo-hidden1" : ""}`} />
             <img src={tetfund} alt="" className={`node-3-logo ${robotized === 3 ? " node-3-logo-hidden2" : ""}`} />
           </div>
+          <div className="test-button">
+          <div className={`h-node-3-cta h-cta-green delayMe ${robotized === 3? "":" h-node-3-cta-hidden-last"}`}>Apply Now</div>
+          </div>
+          
         </div>
         </div>
 

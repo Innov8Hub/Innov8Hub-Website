@@ -78,7 +78,7 @@ function Ourcore() {
   return (
     <div className='oc'>
         
-        <h1 className="oc-header">Our <span style={{ color: "#EA7F1E"}}>Core</span></h1>
+        <h1 className="oc-header">Our <span style={{ color: "#EA7F1E"}}>Services</span></h1>
       <div className="oc-wrapper">
         <div className="oc-cards-wrapper">
             <div className="oc-card"  >
