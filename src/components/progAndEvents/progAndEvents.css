@@ -37,12 +37,13 @@ a{
     height: 25vw;
     border-radius: 1vw;
     margin-left:-1vw;
-    box-shadow: .1vw .1vw .1vw rgba(0, 0, 0, 0.25);
+    /*  box-shadow: .1vw .1vw .1vw rgba(0, 0, 0, 0.25); */
     position: relative;
     padding: .2vw;
     background: linear-gradient(to top,rgba(38, 82, 40, 1),
     rgba(249, 182, 100, 1));
     display: flex;
+    isolation: isolate;
 }
 .pande-slider-card::after{
     content: "";
