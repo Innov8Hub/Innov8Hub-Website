@@ -1,13 +1,13 @@
 .Ih{
     font-family: 'Montserrat', sans-serif;
     background-color: #172518;
-    height: 15rem;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    padding-top: 50px;
+    padding: 5rem 0;
+    padding-top: 10rem;
     color:white;
     font-size: 4rem;
 }

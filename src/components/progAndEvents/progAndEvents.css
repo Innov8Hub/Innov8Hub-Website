@@ -6,7 +6,8 @@ a{
     width: 100%;
     height: fit-content;
     background-color: #326E35;
-    font-family: helvetica;
+    
+  font-family: 'Montserrat', sans-serif;
     overflow: hidden;
     position: relative;
     display: grid;

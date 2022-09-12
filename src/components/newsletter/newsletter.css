@@ -13,6 +13,8 @@
 ::placeholder{
     font-size:1.25rem;
     text-align: left;
+    
+  font-family: 'Montserrat', sans-serif;
 }
 .nl-button{
     position: relative;

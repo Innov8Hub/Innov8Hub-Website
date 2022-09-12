@@ -17,7 +17,7 @@ function IlHero() {
     const isMobile = width <= 768;
   return (
     <div className='Ih' style={{ backgroundImage:`url(${bg})`,backgroundRepeat:"repeat", backgroundSize:`${isMobile?"50%":"20%"}%`}}>
-      Innov8 <span  style={{ color: "#EA7F1E"}}>Learn</span> 
+      Innov8<span  style={{ color: "#EA7F1E"}}>Learn</span> 
     </div>
   )
 }

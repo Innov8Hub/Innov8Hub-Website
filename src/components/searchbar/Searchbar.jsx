@@ -3,8 +3,8 @@ import "./searchbar.css"
 
 function Searchbar() {
   return (
-    <div>
-      
+    <div className='sb-wrapper'>
+      <div className="sb">Search</div>
     </div>
   )
 }
