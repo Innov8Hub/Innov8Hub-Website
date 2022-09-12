@@ -243,4 +243,10 @@ z-index: 5;
         grid-column-start: 1;
         grid-column-end: 4;
     }
+    .standingLady{
+        display: none;
+    }
+    .sittingGuy{
+        display: none;
+    }
 }

@@ -2,7 +2,7 @@
     display: flex;
 }
 .nl-form input{
-    width: 30vw;
+    width: 20rem;
     height: 4rem;
     padding: 0;
     border:2px solid #326E35 ;

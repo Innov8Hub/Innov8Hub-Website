@@ -17,6 +17,7 @@
 .n-logo-wrapper{
   height: 50px;
   grid-column-start: 2;
+  cursor: pointer;
 }
 .n-can-seebg{
   background-color: #172518;
@@ -206,7 +207,7 @@
   height: 50px;
   width: 100%;
   left: 0;
-  top:55vh
+  top:65vh
 }
 @media screen and (max-width: 600px) {
     .n{

@@ -16,23 +16,37 @@ import Schprog from "./components/schprog/Schprog";
 import Testimonials from "./components/testimonials/Testimonials";
 import RecentFeeds from "./components/recentFeeds/RecentFeeds";
 import DontMiss from "./components/dontMiss/DontMiss";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./routes/Home";
+import Innov8Learn from "./routes/Innov8Learn";
 
 const App = () => {
-  return <ParallaxProvider>
+  return <Router>
+    <ParallaxProvider>
     <LandingAnim/>
     <NavBar/>
-    <Hero/>
-    <Ourcore/>
-    <AboutUs/>
-    <Pv/>
-    <ProgAndEvents/>
-    <Partners/>
-    <Schprog/>
-    <RecentFeeds/>
-    <DontMiss/>
-    <Testimonials/>
-    <Footer/>
-    </ParallaxProvider>;
+          <Routes>
+            <Route path="/" element={<Home/>}></Route>
+            <Route path="/innov8Learn" element={<Innov8Learn/>}></Route>
+          </Routes>
+          </ParallaxProvider>
+        </Router>
+  // <ParallaxProvider>
+  //   <LandingAnim/>
+  //   <NavBar/>
+  //   <Hero/>
+  //   <Ourcore/>
+  //   <AboutUs/>
+  //   <Pv/>
+  //   <ProgAndEvents/>
+  //   <Partners/>
+  //   <Schprog/>
+  //   <RecentFeeds/>
+  //   <DontMiss/>
+  //   <Testimonials/>
+  //   <Footer/>
+  // </ParallaxProvider>
+  // ;
 };
 
 export default App;

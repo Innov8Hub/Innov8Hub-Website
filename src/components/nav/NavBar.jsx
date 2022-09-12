@@ -11,6 +11,7 @@ import {AiFillTwitterCircle} from 'react-icons/ai'
 import {AiFillInstagram} from 'react-icons/ai'
 import {AiFillYoutube} from 'react-icons/ai'
 import {FaTwitterSquare} from 'react-icons/fa'
+import { Outlet, Link } from 'react-router-dom';
 
 function NavBar() {
   const check = useRef();
@@ -26,12 +27,10 @@ function NavBar() {
   
   return (
     <div className="n">
-        <div className="n-logo-wrapper">
-        <RotLogo/>
-        </div>
+        <div className="n-logo-wrapper"><Link to="/"><RotLogo/></Link></div>
         <ul className="n-links">
-            <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Home</Button></a></li>
-            <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Innov8Learn</Button></a></li>
+          <li className="n-link"><Link to="/"><Button variant="swipeGrad lightgreen">Home</Button></Link></li>
+            <li className="n-link"><Link to="/innov8Learn"><Button variant="swipeGrad lightgreen">Innov8Learn</Button></Link></li>
             <li className="n-link"><a href='#programs'><Button variant="swipeGrad lightgreen">Programs</Button></a></li>
             <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Gallery</Button></a></li>
             <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Feeds</Button></a></li>
@@ -39,15 +38,14 @@ function NavBar() {
             <div className="hambuger">
               <div id="wrapper">
               <div id="menuToggle">
-
     <input id="checkbox" type="checkbox" />
     
     <span></span>
     <span></span>
     <span></span>
     <ul onClick={undo} ref={check}id="menu">
-      <a href="#"><li>Home</li></a>
-      <a href="#"><li>Innov8Learn</li></a>
+    <Link to="/"><li>Home</li></Link>
+    <Link to="/innov8Learn"><li>Innov8Learn</li></Link>
       <a href="#programs"><li>Programs</li></a>
       <a href="#"><li>Gallery</li></a>
       <a href="#"><li>Feeds</li></a>
@@ -64,7 +62,7 @@ function NavBar() {
     </ul>
   </div>
               </div>
-            </div>
+        </div>
         </ul>
        
     </div>
