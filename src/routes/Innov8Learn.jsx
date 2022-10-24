@@ -9,6 +9,7 @@ function Innov8Learn() {
     <div>
         <IlHero/>
         <Courses/>
+        <div className="hello bg-red-500 p-10">hello</div>
     </div>
   )
 }

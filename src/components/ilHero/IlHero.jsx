@@ -1,5 +1,6 @@
 import React from 'react'
 import './ilHero.css'
+import '../../../src/index.css'
 import bg from "../../images/innov8learn/bg_mesh.png"
 import { useState ,useEffect} from 'react'
 function IlHero() {

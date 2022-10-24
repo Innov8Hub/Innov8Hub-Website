@@ -4,7 +4,7 @@ import "./searchbar.css"
 function Searchbar() {
   return (
     <div className='sb-wrapper'>
-      <div className="sb">Search</div>
+      <div className="text-3xl font-bold underline">Search</div>
     </div>
   )
 }

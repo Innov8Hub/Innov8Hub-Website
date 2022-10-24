@@ -3,12 +3,11 @@
     height:60px;
     background-color: #172518;
     position: fixed;
+    top:0;
     z-index: 10;
     display: grid;
     padding: 1vw 0 1.5rem 0;
-    grid-auto-columns: minmax(5vw,1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
     grid-template-columns: 10vw 40vw 40vw;
     align-items: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
@@ -19,6 +18,7 @@
   height: 50px;
   grid-column-start: 2;
   cursor: pointer;
+  display: inline-block;
 }
 .n-can-seebg{
   background-color: #172518;

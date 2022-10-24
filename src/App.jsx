@@ -20,6 +20,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./routes/Home";
 import Innov8Learn from "./routes/Innov8Learn";
 
+
+
 const App = () => {
   return <Router>
     <ParallaxProvider>

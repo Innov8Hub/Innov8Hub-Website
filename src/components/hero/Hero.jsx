@@ -18,8 +18,11 @@ import tetfund from '../../images/partners/ptr-img4.png'
 import Button from '../button/Button';
 
 function Hero() {
+  const timeoutRef = React.useRef(null);
   var [robotized , setRobotized] = useState(0);
-  const Stage = useRef()
+  const colors = ["","","",""];
+const delay = 2500;
+  let Stage = useRef()
   const handleRobot =() =>{
     Stage+= 1;
 
@@ -31,21 +34,52 @@ function Hero() {
     const parallax2 = useParallax({
         speed: -10,
       });
+
+
+      function resetTimeout() {
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
+      }
     // const parallax3 = useParallax({
     //     speed: -20,
     //   });
-    useEffect(()=>{ var i =0;
-      setRobotized(i)
-      setInterval(()=>{
 
-      i +=1 ;
-      if (i === 4){
-        i =0
-      }
-      setRobotized(i);console.log({i})
-    },5000)
-  }
-    ,[])
+
+
+    // useEffect(()=>{ var i =0;
+    //   let mainloop;
+    //   setRobotized(i)
+    //   // clearInterval(mainloop)
+    //   mainloop = setTimeout(()=>{
+
+    //   i +=1 ;
+    //   if (i === 4){
+    //     i =0
+    //   }
+    //   setRobotized(i);
+    // },5000)
+    // console.log(i)
+    React.useEffect(() => {
+      resetTimeout();
+      timeoutRef.current = setTimeout(
+        () =>
+          setRobotized((prevIndex) =>
+            prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          ),
+        delay
+      );
+  
+      return () => {
+        resetTimeout();
+      };
+    }, [robotized]);
+    // let testt = document.querySelector(".testt")
+    // testt.addEventListener("click",()=>{
+    //   alert("click")
+    //   i=0
+    // })
+  
 
   return (
     <div className={`h ${" h-"+robotized}`} onClick={handleRobot}>
@@ -94,7 +128,7 @@ function Hero() {
         <img ref={parallax.ref} src={heroBack1} alt="" className={` h-img-back${robotized === 0 ? "" : " move-back1"}`}/>
         
 
-        <div class="container">
+        <div className="container">
   <div className={`carousel ${"carousel-"+robotized}`} >
     <div className={`item a ${robotized === 0 ? "" : "hidden"}`}>
         <img src={heroMain} alt="" className="h-imgs h-img-main" />
@@ -112,6 +146,16 @@ function Hero() {
 </div>
 {/*
         <img src={heroMain} alt="" className="h-imgs h-img-main" /> */}
+     {/* <div className="slideshowDots">
+        {colors.map((_, idx) => (
+          <div key={idx} className="slideshowDot"
+          onClick={() => {
+            setRobotized(2);
+            console.log(robotized)
+          }}
+          ></div>
+        ))}
+      </div> */}
     </div>
   )
 }

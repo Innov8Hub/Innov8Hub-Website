@@ -11,7 +11,7 @@ import {AiFillTwitterCircle} from 'react-icons/ai'
 import {AiFillInstagram} from 'react-icons/ai'
 import {AiFillYoutube} from 'react-icons/ai'
 import {FaTwitterSquare} from 'react-icons/fa'
-import { Outlet, Link } from 'react-router-dom';
+import {Link} from 'react-router-dom'
 
 function NavBar() {
   const check = useRef();
@@ -26,7 +26,7 @@ function NavBar() {
   }
   
   return (
-    <div className="n">
+    <div className=" n">
         <div className="n-logo-wrapper"><Link to="/"><RotLogo/></Link></div>
         <ul className="n-links">
           <li className="n-link"><Link to="/"><Button variant="swipeGrad lightgreen">Home</Button></Link></li>

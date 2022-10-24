@@ -4,7 +4,7 @@ import './courses.css'
 
 function Courses() {
   return (
-    <div>
+    <div className="bg-red-400">
       <Searchbar/>
     </div>
   )

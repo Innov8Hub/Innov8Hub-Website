@@ -18,7 +18,6 @@ import ptn2_6 from "../../images/partners/ptr-img2-6.png";
 import ptn2_7 from "../../images/partners/ptr-img2-7.png";
 import ptn2_8 from "../../images/partners/ptr-img2-8.png";
 import vectorBottomGreen from "../../images/vector-bottom-green.svg"
-
 function partners() {
     // for(var i=1;i<=8;i++){
     //     console.log('import ptn2_'+i+' from "../../images/partners/ptr-img2-'+i+'.png";')
@@ -28,9 +27,9 @@ function partners() {
         <img src={vectorBottomGreen} alt="" className="vectorBottomGreen" />
         <div className="pts-wrapper">
         <h1 className="pts-header">Partners</h1>
-        <div className="pts-companies">
-            <div className="pts-companies-row row1">
-                <a href="" className="pts-comp-link-r1"><img src={ptn1} alt="" className="pts-comp-img ptn-r1" /></a>
+        <div className="pts-companies flex h-fit">
+            <div className="pts-companies-row row1 h-fit ">
+                <a href="" className="pts-comp-link-r1"><img src={ptn1} alt="" className="pts-comp-img ptn-r1 w-120 max-w-md"  /></a>
                 <a href="" className="pts-comp-link-r1"><img src={ptn2} alt="" className="pts-comp-img ptn-r1" /></a>
                 <a href="" className="pts-comp-link-r1"><img src={ptn3} alt="" className="pts-comp-img ptn-r1" /></a>
                 <a href="" className="pts-comp-link-r1"><img src={ptn4} alt="" className="pts-comp-img ptn-r1" /></a>

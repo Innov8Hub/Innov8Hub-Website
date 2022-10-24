@@ -434,6 +434,24 @@ background-color: white;
   opacity: 1;
   transition: transform 1s .2s;
 }
+.testt{
+  width:20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+}
+.slideshowDots {
+  text-align: center;
+}
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  background-color: #c4c4c4;
+}
 @media screen and (max-width: 1000px) {
     .h-grid-wrapper{
       margin-top: 3rem;
