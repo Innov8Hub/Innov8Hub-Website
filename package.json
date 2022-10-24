@@ -7,19 +7,20 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "framer-motion": "^6.5.1",
+    "lord-icon-element": "^4.0.0",
+    "lottie-web": "^5.9.6",
+    "next": "^12.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.4.0",
-    "react-router-dom": "6",
-    "react-scripts": "^5.0.1",
     "react-scroll-parallax": "^3.3.1",
+    "react-youtube": "^10.0.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": [

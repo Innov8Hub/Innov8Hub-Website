@@ -1,0 +1,27 @@
+import '../components/aboutUs/aboutUs.css'
+import '../components/button/button.css'
+import '../components/card/card.css'
+import '../components/courses/courses.css'
+import '../components/dontMiss/dontMiss.css'
+import '../components/facebookPosts/facebookPosts.css'
+import '../components/footer/footer.css'
+import '../components/hero/hero.css'
+import '../components/ilHero/ilHero.css'
+import '../components/LandingAnim/landingAnim.css'
+import '../components/nav/nav.css'
+import '../components/newsletter/newsletter.css'
+import '../components/ourcore/ourcore.css'
+import '../components/partners/partners.css'
+import '../components/progAndEvents/progAndEvents.css'
+import '../components/pv/pv.css'
+import '../components/recentFeedCard/recentFeedCard.css'
+import '../components/recentFeeds/recentFeeds.css'
+import '../components/rotLogo/rotLogo.css'
+import '../components/schprog/schprog.css'
+import '../components/searchbar/searchbar.css'
+import '../components/testimonials/testimonials.css'
+import '../components/youtubeEmbed/youtubeEmbed.css'
+
+export default function MyApp({ Component, pageProps }) {
+    return <Component {...pageProps} />
+  }
