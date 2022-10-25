@@ -331,7 +331,7 @@ const carousel = new CardCarousel(cardsContainer)
    <>
    
 
-<div className="container-m">
+<div className="container-m overflow-visible">
 <div className="tm-controls">
             <div className="tm-control tm-left"><RiArrowLeftSLine/></div>
             <div className="tm-control tm-right"><RiArrowRightSLine/></div>

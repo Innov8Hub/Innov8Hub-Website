@@ -13,10 +13,10 @@ function RotLogo() {
     })
 })
   return (
-            <div className="yes" style={{ color: 'white',position: 'relative',zIndex: '100',width:"fit-content",gridColumnStart:"1"}}>
+            <div className="yes h-fit relative" style={{ color: 'white',position: 'relative',zIndex: '100',width:"fit-content",gridColumnStart:"1"}}>
                 
-                <img height="50px" src={text} alt="" style={{}} />
-                <img height="50px" src={gear} alt="" style={{ transform: 'translate(17.5%,19.7%) rotate('+ scroll+ 'deg)',position: 'absolute',zIndex:'-1',right:'0',}} />
+                <img className='h-[50px]' height="50px" src={text} alt="" style={{}} />
+                <img className='h-[50px] absolute right-0 top-0' height="50px" src={gear} alt="" style={{ transform: 'translate(17.5%,19.7%) rotate('+ scroll+ 'deg)',position: 'absolute',zIndex:'-1',right:'0',}} />
             </div>
   )
 }

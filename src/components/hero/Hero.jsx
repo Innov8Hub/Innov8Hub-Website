@@ -73,7 +73,7 @@ const delay = 2500;
       return () => {
         resetTimeout();
       };
-    }, [robotized]);
+    }, [colors.length]);
     // let testt = document.querySelector(".testt")
     // testt.addEventListener("click",()=>{
     //   alert("click")
@@ -128,10 +128,10 @@ const delay = 2500;
         <img ref={parallax.ref} src={heroBack1} alt="" className={` h-img-back${robotized === 0 ? "" : " move-back1"}`}/>
         
 
-        <div className="container">
+        <div className="containerr">
   <div className={`carousel ${"carousel-"+robotized}`} >
     <div className={`item a ${robotized === 0 ? "" : "hidden"}`}>
-        <img src={heroMain} alt="" className="h-imgs h-img-main" />
+        <img src={heroMain} alt="" className="h-imgs h-img-main absolute right-0 bottom-0" />
     </div>
     <div className={`item b ${robotized === 1 ? "" : "hidden"}`}>
         <img src={innov8learn} alt="" className="h-imgs h-img-main2 innov8Learn" />

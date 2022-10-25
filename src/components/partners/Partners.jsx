@@ -25,11 +25,11 @@ function partners() {
   return (
     <div className='pts'>
         <img src={vectorBottomGreen} alt="" className="vectorBottomGreen" />
-        <div className="pts-wrapper">
+        <div className="pts-wrapper w-full">
         <h1 className="pts-header">Partners</h1>
-        <div className="pts-companies flex h-fit">
-            <div className="pts-companies-row row1 h-fit ">
-                <a href="" className="pts-comp-link-r1"><img src={ptn1} alt="" className="pts-comp-img ptn-r1 w-120 max-w-md"  /></a>
+        <div className="pts-companies flex">
+            <div className="pts-companies-row">
+                <a href="" className="pts-comp-link-r1"><img src={ptn1} alt="" className="pts-comp-img ptn-r1 h-fill"  /></a>
                 <a href="" className="pts-comp-link-r1"><img src={ptn2} alt="" className="pts-comp-img ptn-r1" /></a>
                 <a href="" className="pts-comp-link-r1"><img src={ptn3} alt="" className="pts-comp-img ptn-r1" /></a>
                 <a href="" className="pts-comp-link-r1"><img src={ptn4} alt="" className="pts-comp-img ptn-r1" /></a>

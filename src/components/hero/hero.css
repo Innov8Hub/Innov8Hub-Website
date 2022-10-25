@@ -322,7 +322,7 @@ background-color: white;
 
 
 
-.container {
+.containerr {
     width: 100vh;
     height: 100vh;
     position: absolute;
@@ -525,7 +525,7 @@ background-color: white;
       align-items: center;
       justify-content: center;
     }
-    .container {
+    .containerr {
       width: 250px;
       height: 200px;
       position: relative;
