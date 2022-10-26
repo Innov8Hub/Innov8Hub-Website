@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "innov8Yellow":"#FEFAC6"
+        "innov8Yellow":"#FEFAC6",
+        "innov8LightGreen":"#F0F9EC"
+        ,"innov8Organge":"#EA7F1E"
       }
     },
     
