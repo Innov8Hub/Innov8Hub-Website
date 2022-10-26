@@ -10,7 +10,7 @@ const Innov8Learn = lazy(()=> import("./routes/Innov8Learn"))
 const App = () => {
   return <Router>
     <ParallaxProvider>
-    <LandingAnim/>
+    <LandingAnim/> 
     <NavBar/>
           <Suspense fallback={<h1>Loading...</h1>}>
           <Routes>

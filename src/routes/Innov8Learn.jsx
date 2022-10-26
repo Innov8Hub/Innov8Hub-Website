@@ -70,7 +70,7 @@ function Innov8Learn() {
             <section className=' flex-1 mt-4'>
            
               {/* <div className='text-sm'>{recordList(query)}</div> */}
-              {records.filter(course=>course.title.toLowerCase().includes(query)).map((record) => {
+              {records.filter(course=>course.title.toLowerCase().includes(query)).map((record,index) => {
                     return (
                       <div className="w-fit bg-innov8LightGreen rounded-xl p-9 text-left mb-5">
                       <header className='text-left mb-4'>
