@@ -26,7 +26,7 @@ function NavBar() {
   }
   
   return (
-    <div className=" n h-fit">
+    <div className=" n">
         <div className="n-logo-wrapper"><Link to="/"><RotLogo/></Link></div>
         <ul className="n-links">
           <li className="n-link"><Link to="/"><Button variant="swipeGrad lightgreen">Home</Button></Link></li>

@@ -67,19 +67,19 @@ function Innov8Learn() {
                 </div>
 
             </aside>
-            <section className=' flex-1 mt-4'>
+            <section className=' flex-1 mt-4 lg:flex-grow'>
            
               {/* <div className='text-sm'>{recordList(query)}</div> */}
               {records.filter(course=>course.title.toLowerCase().includes(query)).map((record,index) => {
                     return (
-                      <div className="w-fit bg-innov8LightGreen rounded-xl p-9 text-left mb-5">
+                      <div className="w-fit lg:w-full bg-innov8LightGreen rounded-xl p-9 text-left mb-5">
                       <header className='text-left mb-4'>
                       <h1 className='text-left text-lg font-semibold mb-2'>
                       {record.title}
                       </h1>
                       <p className='text-left text-sm'>
-                        {record.desc.substring(0,80)}
-                        <span className=' text-innov8Organge text-xs'>{`... Read More>>`}</span>
+                        {window.innerWidth <= 800 ? record.desc.substring(0,80) : record.desc}
+                        <span className=' md:hidden lg:hidden text-innov8Organge text-[.7rem]'>{`... Read More>>`}</span>
                       </p>
                       </header>
                       <div className="mods text-xs">
