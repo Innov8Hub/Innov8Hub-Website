@@ -17,7 +17,7 @@ function Innov8Learn() {
   // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
-      const response = await fetch(`http://localhost:5000/Courses/`);
+      const response = await fetch(`http://localhost:28017/Courses/`);
   
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;
