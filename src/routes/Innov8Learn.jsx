@@ -6,6 +6,7 @@ import {FiChevronDown} from 'react-icons/fi'
 import {BiSearch} from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { queries } from '@testing-library/react'
+import axios from 'axios'
 
 function Innov8Learn() {
   
@@ -14,10 +15,70 @@ function Innov8Learn() {
   const [records, setRecords] = useState([]);
   const [query, setQuery] = useState("");
 
+  // useEffect(()=>{
+  //   var myHeaders = new Headers();
+
+  //   myHeaders.append("Access-Control-Allow-Origin", "*");
+  //   myHeaders.append("Access-Control-Allow-Credentials", "true");
+  //   myHeaders.append("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+   
+  // myHeaders.append("Content-Type", "application/json");
+  // myHeaders.append("api-key", "WFetxORZs7nvoexnW0iL08KgqXpdYmZiq4rqDw8OQID71a8dr1IpOoeplBRdTX2N");
+  // myHeaders.append("Accept", "application/json");
+  // myHeaders.append("Access-Control-Allow-Headers", "X-Requested-With,content-type,**Authorization**, api-key, Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
+  
+  
+  // var raw = JSON.stringify({
+  //   "dataSource": "Innov8Learn",
+  //   "database": "Innov8Learn",
+  //   "collection": "Courses"
+  // });
+  
+  // var requestOptions = {
+  //   method: 'POST',
+  //   headers: myHeaders,
+  //   body: raw,
+  //   redirect: 'follow'
+  // };
+  
+  // fetch("/app/data-vdakt/endpoint/data/v1/action/find", requestOptions)
+  //   .then(response => response.text())
+  //   .then(result => console.log(Object.keys(JSON.parse(result))) )
+  //   .catch(error => console.log('error', error));
+  
+  
+  // })
+
+  
+
   // This method fetches the records from the database.
   useEffect(() => {
+       var myHeaders = new Headers();
+
+    myHeaders.append("Access-Control-Allow-Origin", "*");
+    myHeaders.append("Access-Control-Allow-Credentials", "true");
+    myHeaders.append("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+   
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("api-key", "WFetxORZs7nvoexnW0iL08KgqXpdYmZiq4rqDw8OQID71a8dr1IpOoeplBRdTX2N");
+  myHeaders.append("Accept", "application/json");
+  myHeaders.append("Access-Control-Allow-Headers", "X-Requested-With,content-type,**Authorization**, api-key, Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
+  
+  
+  var raw = JSON.stringify({
+    "dataSource": "Innov8Learn",
+    "database": "Innov8Learn",
+    "collection": "Courses"
+  });
+  
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow'
+  };
     async function getRecords() {
-      const response = await fetch(`http://localhost:28017/Courses/`);
+      const response = await fetch(`/app/data-vdakt/endpoint/data/v1/action/find`, requestOptions);
   
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;
@@ -26,16 +87,38 @@ function Innov8Learn() {
       }
   
       const records = await response.json();
-      setRecords(records);
+      // console.log(records)
+      // console.log(typeof(records.documents))
+      setRecords(records.documents);
     }
   
     getRecords();
+  })
+  //   return;
+  // }, [records.length]);
   
-    return;
-  }, [records.length]);
+  // This method fetches the records from the database.
+  // useEffect(() => {
+  //   async function getRecords() {
+  //     const response = await fetch(`http://localhost:28017/Courses/`);
   
-
-  console.log(records.filter(course=>course.title.toLowerCase().includes('Program')))
+  //     if (!response.ok) {
+  //       const message = `An error occurred: ${response.statusText}`;
+  //       window.alert(message);
+  //       return;
+  //     }
+  
+  //     const records = await response.json();
+  //     setRecords(records);
+  //   }
+  
+  //   getRecords();
+  // })
+  //   return;
+  // }, [records.length]);
+  
+ 
+  //console.log(records.filter(course=>course.title.toLowerCase().includes('Program')))
   return (
     <div className=''>
         <IlHero/>

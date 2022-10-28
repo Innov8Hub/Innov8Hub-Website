@@ -4,6 +4,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import NavBar from "./components/nav/NavBar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './routes/Home'
+const cors = require("cors");
 
 const Innov8Learn = lazy(()=> import("./routes/Innov8Learn"))
 
