@@ -33,7 +33,7 @@ function NavBar() {
             <li className="n-link"><Link to="/innov8Learn"><Button variant="swipeGrad lightgreen">Innov8Learn</Button></Link></li>
             <li className="n-link"><a href='#programs'><Button variant="swipeGrad lightgreen">Programs</Button></a></li>
             <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Gallery</Button></a></li>
-            <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Feeds</Button></a></li>
+            <li className="n-link "><a href='#'><Button variant="swipeGrad lightgreen">Feeds</Button></a></li>
             <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Contact</Button></a></li>
             <div className="hambuger">
               <div id="wrapper">

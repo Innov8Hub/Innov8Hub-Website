@@ -1,11 +1,3 @@
-// const {createProxyMiddleware} = require('http-proxy-middleware');
-
-// module.exports = app => {
-//     app.use(
-//         createProxyMiddleware ('/')
-//     )
-// }
-
 const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
