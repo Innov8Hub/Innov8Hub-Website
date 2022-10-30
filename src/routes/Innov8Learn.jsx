@@ -13,70 +13,7 @@ function Innov8Learn() {
   const records = courses.courses
   const [query, setQuery] = useState("");
 
-  // useEffect(()=>{
-  //   var myHeaders = new Headers();
-
-  //   myHeaders.append("Access-Control-Allow-Origin", "*");
-  //   myHeaders.append("Access-Control-Allow-Credentials", "true");
-  //   myHeaders.append("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
-   
-  // myHeaders.append("Content-Type", "application/json");
-  // myHeaders.append("api-key", "WFetxORZs7nvoexnW0iL08KgqXpdYmZiq4rqDw8OQID71a8dr1IpOoeplBRdTX2N");
-  // myHeaders.append("Accept", "application/json");
-  // myHeaders.append("Access-Control-Allow-Headers", "X-Requested-With,content-type,**Authorization**, api-key, Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
-  
-  
-  // var raw = JSON.stringify({
-  //   "dataSource": "Innov8Learn",
-  //   "database": "Innov8Learn",
-  //   "collection": "Courses"
-  // });
-  
-  // var requestOptions = {
-  //   method: 'POST',
-  //   headers: myHeaders,
-  //   body: raw,
-  //   redirect: 'follow'
-  // };
-  
-  // fetch("/app/data-vdakt/endpoint/data/v1/action/find", requestOptions)
-  //   .then(response => response.text())
-  //   .then(result => console.log(Object.keys(JSON.parse(result))) )
-  //   .catch(error => console.log('error', error));
-  
-  
-  // })
-
-  
-
-  // This method fetches the records from the database.
-  
-  //   return;
-  // }, [records.length]);
-  
-  // This method fetches the records from the database.
-  // useEffect(() => {
-  //   async function getRecords() {
-  //     const response = await fetch(`http://localhost:28017/Courses/`);
-  
-  //     if (!response.ok) {
-  //       const message = `An error occurred: ${response.statusText}`;
-  //       window.alert(message);
-  //       return;
-  //     }
-  
-  //     const records = await response.json();
-  //     setRecords(records);
-  //   }
-  
-  //   getRecords();
-  // })
-  //   return;
-  // }, [records.length]);
-  
- 
-  //console.log(records.filter(course=>course.title.toLowerCase().includes('Program')))
-  return (
+ return (
     <div className=''>
         <IlHero/>
         <div className="wrapper mx-[10vw] mt-5">
@@ -119,7 +56,7 @@ function Innov8Learn() {
             <section className=' flex-1 mt-4 lg:flex-grow'>
            
               {/* <div className='text-sm'>{recordList(query)}</div> */}
-              {records.filter(course=>course.title.toLowerCase().includes(query)).map((record,index) => {
+              {records.filter(course=>course.title.toLowerCase().includes(query.toLocaleLowerCase())).map((record,index) => {
                     return (
                       <div className="w-fit lg:w-full bg-innov8LightGreen rounded-xl p-9 text-left mb-5">
                       <header className='text-left mb-4'>
