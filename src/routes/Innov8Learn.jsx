@@ -21,49 +21,151 @@ function Innov8Learn() {
             <BiSearch className='absolute top-1/2 -translate-y-1/2 ml-4'></BiSearch>
             <input type='text' onChange={(e)=>setQuery(e.target.value)} placeholder='search available courses' className=' text-center rounded-lg p-2 px-4 placeholder:text-center placeholder:text-sm hover:outline-none focus:outline-none' />
           </form>
-          <main className='flex flex-col lg:flex-row gap-3 w-full mt-5'>
+          <main className='flex flex-col lg:flex-row gap-0 lg:gap-10 w-full mt-5'>
             <aside className='bg-innov8Yellow flex flex-col justify-center p-3 rounded-xl md:justify-start'>
-              <div className="dropdown">
-              <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Categories<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-
-<div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700" style={{position: "absolute", inset: "0px auto auto 0px", margin: "0px", transform: "translate(0px, 310px)"}} data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
-    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
-      <li>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-      </li>
-    </ul>
+            <div class="flex justify-center">
+  <div>
+    <div class="dropdown relative">
+      <button
+        class="
+          dropdown-toggle
+          px-6
+          py-2.5
+          bg-blue-600
+          text-white
+          font-medium
+          text-xs
+          leading-tight
+          uppercase
+          rounded
+          shadow-md
+          hover:bg-blue-700 hover:shadow-lg
+          focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-blue-800 active:shadow-lg active:text-white
+          transition
+          duration-150
+          ease-in-out
+          flex
+          items-center
+          whitespace-nowrap
+        "
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Dropdown button
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="caret-down"
+          class="w-2 ml-2"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+        >
+          <path
+            fill="currentColor"
+            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+          ></path>
+        </svg>
+      </button>
+      <ul
+        class="
+          dropdown-menu
+          min-w-max
+          absolute
+          hidden
+          bg-white
+          text-base
+          z-50
+          float-left
+          py-2
+          list-none
+          text-left
+          rounded-lg
+          shadow-lg
+          mt-1
+          hidden
+          m-0
+          bg-clip-padding
+          border-none
+        "
+        aria-labelledby="dropdownMenuButton1"
+      >
+        <li>
+          <a
+            class="
+              dropdown-item
+              text-sm
+              py-2
+              px-4
+              font-normal
+              block
+              w-full
+              whitespace-nowrap
+              bg-transparent
+              text-gray-700
+              hover:bg-gray-100
+            "
+            href="#"
+            >Action</a
+          >
+        </li>
+        <li>
+          <a
+            class="
+              dropdown-item
+              text-sm
+              py-2
+              px-4
+              font-normal
+              block
+              w-full
+              whitespace-nowrap
+              bg-transparent
+              text-gray-700
+              hover:bg-gray-100
+            "
+            href="#"
+            >Another action</a
+          >
+        </li>
+        <li>
+          <a
+            class="
+              dropdown-item
+              text-sm
+              py-2
+              px-4
+              font-normal
+              block
+              w-full
+              whitespace-nowrap
+              bg-transparent
+              text-gray-700
+              hover:bg-gray-100
+            "
+            href="#"
+            >Something else here</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
-              </div>
-              {/* <ul className=' lg:block'>
-                <li>
-                  blah
-                </li>
-                <li>
-                  blah blah
-                </li>
-              </ul> */}
-
             </aside>
-            <section className=' flex-1 mt-4 lg:flex-grow'>
+            <section className=' flex-1 mt-4 lg:flex-grow flex flex-col gap-10'>
            
-              {/* <div className='text-sm'>{recordList(query)}</div> */}
               {records.filter(course=>course.title.toLowerCase().includes(query.toLocaleLowerCase())).map((record,index) => {
                     return (
-                      <div className="w-fit lg:w-full bg-innov8LightGreen rounded-xl p-9 text-left mb-5">
+                      <div className="w-fit lg:w-full bg-innov8LightGreen rounded-xl p-9 text-left ">
                       <header className='text-left mb-4'>
                       <h1 className='text-left text-lg font-semibold mb-2'>
                       {record.title}
                       </h1>
-                      <p className='text-left text-sm'>
+                      <p className='text-left text-sm lg:w-1/2'>
                         {window.innerWidth <= 800 ? record.desc.substring(0,80) : record.desc}
                         <span className=' md:hidden lg:hidden text-innov8Organge text-[.7rem]'>{`... Read More>>`}</span>
                       </p>
@@ -79,7 +181,7 @@ function Innov8Learn() {
                       </div>
                     </div>
                     );
-                })}
+              })}
             </section>
           </main>
           
