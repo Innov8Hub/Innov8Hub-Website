@@ -370,9 +370,7 @@ background-color: white;
     border-radius: 10px;
     transition: opacity .5s;
   }
-  .hidden{
-    opacity: 0;
-  }
+
 
   .a {
     transform: rotateY(0deg) translateZ(250px);

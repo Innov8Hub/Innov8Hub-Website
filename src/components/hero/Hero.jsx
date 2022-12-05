@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react';
 import './hero.css'
 import heroMain from '../../images/hero/hero.svg'
 import heroMain2 from '../../images/hero/hero2.svg'
+import tetfair from "../../images/hero/Tetfair.svg"
+import innov8learn from "../../images/hero/innov8Learn.svg"
 import heroBack from '../../images/hero/heroback.svg'
 import heroBack1 from '../../images/hero/heroback3.svg'
 import heroBack2 from '../../images/hero/heroback2.svg'
 import { useParallax } from 'react-scroll-parallax'
-import innov8learn from "../../images/hero/innov8Learn.svg"
-import tetfair from "../../images/hero/Tetfair.svg"
 import greenSmall from "../../images/hero/greenSmall.svg"
 import orangeSmall from "../../images/hero/orangeSmall.svg"
 import greenSmallrob from "../../images/hero/greenSmall.svg"

@@ -4,9 +4,13 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import NavBar from "./components/nav/NavBar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './routes/Home'
+import Innov8LearnCourses from './routes/Innov8LearnCourses';
+import { useQuery, gql } from '@apollo/client';
+
 const cors = require("cors");
 
 const Innov8Learn = lazy(()=> import("./routes/Innov8Learn"))
+
 
 const App = () => {
   return <Router>
@@ -17,6 +21,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home/>}></Route>
             <Route path="/innov8Learn" element={<Innov8Learn/>}></Route>
+            <Route path="/innov8Learn/:id" element={<Innov8LearnCourses/>}></Route>
           </Routes>
           </Suspense>
           </ParallaxProvider>

@@ -3,16 +3,20 @@ import Courses from '../components/courses/Courses'
 import IlHero from '../components/ilHero/IlHero'
 import Searchbar from '../components/searchbar/Searchbar'
 import {FiChevronDown} from 'react-icons/fi'
-import {BiSearch} from 'react-icons/bi'
+import {BiChevronDown, BiSearch} from 'react-icons/bi'
+import {GrStatusGood} from 'react-icons/gr'
 import { Link } from 'react-router-dom'
 import { queries } from '@testing-library/react'
 import axios from 'axios'
-import courses from '../courses.json' 
+import courses from '../courses.json'  
+import {useParams} from "react-router-dom";
+import { Menu } from '@headlessui/react'
 
 function Innov8Learn() {
+  const {id} = useParams();
   const records = courses.courses
   const [query, setQuery] = useState("");
-
+  const [cat, setCat] = useState("");
  return (
     <div className=''>
         <IlHero/>
@@ -23,143 +27,57 @@ function Innov8Learn() {
           </form>
           <main className='flex flex-col lg:flex-row gap-0 lg:gap-10 w-full mt-5'>
             <aside className='bg-innov8Yellow flex flex-col justify-center p-3 rounded-xl md:justify-start'>
-            <div class="flex justify-center">
-  <div>
-    <div class="dropdown relative">
-      <button
-        class="
-          dropdown-toggle
-          px-6
-          py-2.5
-          bg-blue-600
-          text-white
-          font-medium
-          text-xs
-          leading-tight
-          uppercase
-          rounded
-          shadow-md
-          hover:bg-blue-700 hover:shadow-lg
-          focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-          active:bg-blue-800 active:shadow-lg active:text-white
-          transition
-          duration-150
-          ease-in-out
-          flex
-          items-center
-          whitespace-nowrap
-        "
-        type="button"
-        id="dropdownMenuButton1"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Dropdown button
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="caret-down"
-          class="w-2 ml-2"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 320 512"
-        >
-          <path
-            fill="currentColor"
-            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
-          ></path>
-        </svg>
-      </button>
-      <ul
-        class="
-          dropdown-menu
-          min-w-max
-          absolute
-          hidden
-          bg-white
-          text-base
-          z-50
-          float-left
-          py-2
-          list-none
-          text-left
-          rounded-lg
-          shadow-lg
-          mt-1
-          hidden
-          m-0
-          bg-clip-padding
-          border-none
-        "
-        aria-labelledby="dropdownMenuButton1"
-      >
-        <li>
-          <a
-            class="
-              dropdown-item
-              text-sm
-              py-2
-              px-4
-              font-normal
-              block
-              w-full
-              whitespace-nowrap
-              bg-transparent
-              text-gray-700
-              hover:bg-gray-100
-            "
-            href="#"
-            >Action</a
-          >
-        </li>
-        <li>
-          <a
-            class="
-              dropdown-item
-              text-sm
-              py-2
-              px-4
-              font-normal
-              block
-              w-full
-              whitespace-nowrap
-              bg-transparent
-              text-gray-700
-              hover:bg-gray-100
-            "
-            href="#"
-            >Another action</a
-          >
-        </li>
-        <li>
-          <a
-            class="
-              dropdown-item
-              text-sm
-              py-2
-              px-4
-              font-normal
-              block
-              w-full
-              whitespace-nowrap
-              bg-transparent
-              text-gray-700
-              hover:bg-gray-100
-            "
-            href="#"
-            >Something else here</a
-          >
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+            <div className="men-md lg:hidden">
+            <Menu>
+              <Menu.Button className={'flex flex-col items-center w-full'}><span className=' text-center flex flex-row'>Categories <BiChevronDown/></span> </Menu.Button>
+              <Menu.Items className='flex flex-col'>
+                {records.map(course=>{
+                  return(
+                    <Menu.Item >
+                      {({ active }) => (
+                      <p
+                        onClick={()=>{cat==course.cat?setCat(""):setCat(course.cat)}}
+                        className={`flex flex-row items-center w-full justify-between  cursor-pointer capitalize rounded-lg p-4 ${active && 'bg-blue-500'}`}
+                        
+                      >
+                        {course.cat}
+                        <div className={`active ${cat == course.cat?"block":"hidden"}`}>
+                        <GrStatusGood/></div>
+                      </p>
+                  )}
+                </Menu.Item>
+                  )
+                })}
+              </Menu.Items>
+            </Menu>
+            </div> 
+           
+            <div className="men hidden lg:block pt-9">
+              <p className='pl-4 font-bold'>
+                Categories
+              </p>
+            <ul>
+            {records.map(course=>{
+              return(
+                <div className='flex w-full justify-between items-center'>
+                  <li onClick={()=>{cat==course.cat?setCat(""):setCat(course.cat)}} className='capitalize p-4 cursor-pointer'>{course.cat}</li>
+                  <div className={`active ${cat == course.cat?"opacity-1":"opacity-0"}`}>
+                  <GrStatusGood/></div>
+                </div>
+              )
+              }
+              )
+            }
+            </ul>
+            </div>
             </aside>
             <section className=' flex-1 mt-4 lg:flex-grow flex flex-col gap-10'>
            
-              {records.filter(course=>course.title.toLowerCase().includes(query.toLocaleLowerCase())).map((record,index) => {
+              {records.filter(course=>course.title.toLowerCase().includes(query.toLocaleLowerCase())).filter(course=>course.cat.toLowerCase().includes(cat.toLocaleLowerCase())).map((record,index) => {
+                console.log(id)
+                console.log({cat})
                     return (
+                      <Link to={'./' + record.code}>
                       <div className="w-fit lg:w-full bg-innov8LightGreen rounded-xl p-9 text-left ">
                       <header className='text-left mb-4'>
                       <h1 className='text-left text-lg font-semibold mb-2'>
@@ -180,6 +98,7 @@ function Innov8Learn() {
                         </p>
                       </div>
                     </div>
+                    </Link>
                     );
               })}
             </section>

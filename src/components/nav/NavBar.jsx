@@ -12,6 +12,7 @@ import {AiFillInstagram} from 'react-icons/ai'
 import {AiFillYoutube} from 'react-icons/ai'
 import {FaTwitterSquare} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
+import Button2 from '../button2/Button2';
 
 function NavBar() {
   const check = useRef();
@@ -29,12 +30,56 @@ function NavBar() {
     <div className=" n">
         <div className="n-logo-wrapper"><Link to="/"><RotLogo/></Link></div>
         <ul className="n-links">
-          <li className="n-link"><Link to="/"><Button variant="swipeGrad lightgreen">Home</Button></Link></li>
-            <li className="n-link"><Link to="/innov8Learn"><Button variant="swipeGrad lightgreen">Innov8Learn</Button></Link></li>
-            <li className="n-link"><a href='#programs'><Button variant="swipeGrad lightgreen">Programs</Button></a></li>
-            <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Gallery</Button></a></li>
-            <li className="n-link "><a href='#'><Button variant="swipeGrad lightgreen">Feeds</Button></a></li>
-            <li className="n-link"><a href='#'><Button variant="swipeGrad lightgreen">Contact</Button></a></li>
+          <li className="n-link">
+            <Link to="/">
+              <Button2 
+                variant="bgSwoop" 
+                size ="large"
+                colors={["innov8VeryDarkGreen","innov8LightGreen"]}
+                textColors={{"from":"black","to":"white"}}>
+                  Home
+              </Button2>
+            </Link>
+          </li>
+            <li className="n-link"><Link to="/innov8Learn">
+              <Button2 
+                variant="bgSwoop" 
+                size ="large"
+                colors={["innov8VeryDarkGreen","innov8LightGreen"]}
+                textColors={{"from":"black","to":"white"}}>
+                  Innov8Learn
+              </Button2>
+            </Link></li>
+            <li className="n-link"><a href='#programs'>
+              <Button2 
+                variant="bgSwoop" 
+                size ="large"
+                colors={["innov8VeryDarkGreen","innov8LightGreen"]}
+                textColors={{"from":"black","to":"white"}}>
+                  Programs
+              </Button2>
+              </a></li>
+            <li className="n-link"><a href='#'><Button2 
+                variant="bgSwoop" 
+                size ="large"
+                colors={["innov8VeryDarkGreen","innov8LightGreen"]}
+                textColors={{"from":"black","to":"white"}}>
+                  Gallery
+              </Button2></a></li>
+            <li className="n-link "><a href='#'><Button2 
+                variant="bgSwoop" 
+                size ="large"
+                colors={["innov8VeryDarkGreen","innov8LightGreen"]}
+                textColors={{"from":"black","to":"white"}}>
+                  Feeds
+              </Button2></a></li>
+            <li className="n-link"><a href='#'><Button2 
+                variant="bgSwoop" 
+                size ="large"
+                colors={["innov8VeryDarkGreen","innov8LightGreen"]}
+                textColors={{"from":"black","to":"white"}}>
+                  Contact
+              </Button2></a></li>
             <div className="hambuger">
               <div id="wrapper">
                 <div id="menuToggle">

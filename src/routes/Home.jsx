@@ -10,11 +10,12 @@ import RecentFeeds from '../components/recentFeeds/RecentFeeds'
 import DontMiss from '../components/dontMiss/DontMiss'
 import Testimonials from '../components/testimonials/Testimonials'
 import Footer from '../components/footer/Footer'
+import HeroUpdate from '../components/heroUpdate/HeroUpdate'
 
 function Home() {
   return (
     <>
-    <Hero/>
+    <HeroUpdate/>
     <Ourcore/>
     <AboutUs/>
     <Pv/>
