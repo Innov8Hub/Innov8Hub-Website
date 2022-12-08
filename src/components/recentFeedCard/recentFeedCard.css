@@ -4,7 +4,6 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
     position: relative;
     overflow: hidden;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
 }
@@ -37,8 +36,9 @@
     padding-left: 1.25em;
     
 }
-svg{
+.rfc svg{
     height: auto;
+    cursor: pointer;
 }
 .rfc-text{
     margin-left: 0.43em;

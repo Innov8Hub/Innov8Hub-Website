@@ -59,13 +59,18 @@ function NavBar() {
                   Programs
               </Button2>
               </a></li>
-            <li className="n-link"><a href='#'><Button2 
+            <li className="n-link"><a href='#'>
+              <Link to='/gallery'>
+              <Button2 
                 variant="bgSwoop" 
                 size ="large"
                 colors={["innov8VeryDarkGreen","innov8LightGreen"]}
                 textColors={{"from":"black","to":"white"}}>
                   Gallery
-              </Button2></a></li>
+              </Button2>
+              </Link>
+              </a></li>
+              
             <li className="n-link "><a href='#'><Button2 
                 variant="bgSwoop" 
                 size ="large"

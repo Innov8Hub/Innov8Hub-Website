@@ -31,11 +31,13 @@ a{
     width: 100%;
     flex-direction: row-reverse;
     z-index: 1;
+    height: fit-content;
+    outline: 2px solid red;
 }
 .pande-slider-card{
     width: calc(100%/4);
     flex: 1;
-    height: 25vw;
+    min-height: fit-content;
     border-radius: 1vw;
     margin-left:-1vw;
     /*  box-shadow: .1vw .1vw .1vw rgba(0, 0, 0, 0.25); */
@@ -91,7 +93,9 @@ a{
 .pande-card-header{
     font-size: 1vw;
     color: #326E35;
-    height: 15%;
+    min-height: fit-content;
+    
+    outline:2px solid red
 }
 .pande-card-desc{
     font-size: .8vw;
@@ -113,10 +117,9 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: absolute;
+    position: relative;
     width: 100%;
     left:0;
-    bottom: 2rem;
     font-size: .9vw;
     
 	border-radius:  1rem;

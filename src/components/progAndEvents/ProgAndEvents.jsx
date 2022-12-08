@@ -104,7 +104,7 @@ function ProgAndEvents() {
   }
   return (
     <div id="programs" className='pande' ref={ref}>
-      <div className="pande-controls-wrapper">
+      <div className="pande-controls-wrapper pointer-events-none">
         <div onClick={moveRight} className="pande-control pande-controls-left"><SiPlex/></div>
         
         <div onClick={moveLeft} className="pande-control pande-controls-right"><SiPlex/></div>

@@ -5,6 +5,7 @@ import NavBar from "./components/nav/NavBar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './routes/Home'
 import Innov8LearnCourses from './routes/Innov8LearnCourses';
+import Gallery from './routes/Gallery';
 import { useQuery, gql } from '@apollo/client';
 
 const cors = require("cors");
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/" element={<Home/>}></Route>
             <Route path="/innov8Learn" element={<Innov8Learn/>}></Route>
             <Route path="/innov8Learn/:id" element={<Innov8LearnCourses/>}></Route>
+            <Route path="/gallery" element={<Gallery/>}></Route>
           </Routes>
           </Suspense>
           </ParallaxProvider>
